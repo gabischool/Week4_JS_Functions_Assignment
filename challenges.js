@@ -11,17 +11,21 @@ Log the result as:
 
 "The late fee is $[amount]."
 
+
 Example:
 User Input: 10
 Output: "The late fee is $2.50."
 */
-
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+function calculateLateFee(latefee,overdue){
+   console.log(latefee,overdue)
+}
+calculateLateFee(2.5,10)
 
 
 
