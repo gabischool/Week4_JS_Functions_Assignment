@@ -18,6 +18,11 @@ Output: "The late fee is $2.50."
 */
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee(days){
+   console.log("overdues"day)
+}
+calculateLateFee("")
+log hkjahkjkhgi
 
 
 // Extra Task:
@@ -48,11 +53,19 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+  function  findColorMeaning (blue, red, green,  yellow, other)  {
+   console.log("You love calm and peace.",blue , "You are passionate and bold.",red,"You are connected to nature.",green,"You radiate happiness and energy.",yellow,"That's a unique choice!",other)
+}
+findColorMeaning("blue","red","green","yellow","other")
 
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+const findColorMeaning= (blue, red, green,  yellow, other) => {
+   console.log("You love calm and peace.",blue , "You are passionate and bold.",red,"You are connected to nature.",green,"You radiate happiness and energy.",yellow,"That's a unique choice!",other)
+}
+findColorMeaning("blue","red","green","yellow","other")
 
 
 
@@ -71,11 +84,20 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function logCase (clientName,caseNumber) {
+   console.log("John Doe's case is now logged.", "Case #12345:")
+}
+logCase("clientName","caseNumber")
+
 
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+const logCase = (clientName,caseNumber) => {
+   console.log("John Doe's case is now logged.", "Case #12345:")
+}
+logCase("clientName","caseNumber")
 
 
 /*
@@ -97,6 +119,10 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+const markAttendance (studentName) =>{
+   if 
+}
+
 
 
 
