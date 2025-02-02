@@ -18,6 +18,11 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function sum(num1, num2) {
+   console.log(num1 + num2)
+}
+
+sum(20, 4)
 
 
 // Extra Task:
