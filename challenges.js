@@ -1,6 +1,5 @@
 /*
 Task 1: Library Late Fee Calculator 🚀🚀🚀🚀
-
 You are working at a library and need to calculate late 
 fees for overdue books. Write a function called `calculateLateFee` 
 that takes the number of overdue days as input and calculates 
@@ -16,14 +15,12 @@ User Input: 10
 Output: "The late fee is $2.50."
 */
 
+console.log("Hello from challenges.js");
+
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
 
 // Extra Task:
 // - Convert the function into a function expression.
-
-
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,12 +42,8 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
-
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
-
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -68,11 +61,8 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
-
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -94,12 +84,8 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
-
 // Extra Task:
 // - Convert the function into a function expression.
-
-
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
