@@ -19,6 +19,13 @@ Output: "The late fee is $2.50."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
+function calculateLateFee() {
+   const calculateLateFee= prompt("In put the overdue day/days")
+   const result = (calculateLateFee * 0.25)
+   console.log(result)
+}
+
+calculateLateFee("The late fee is $")
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -44,6 +51,15 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+
+
+
+
+
+
+
+
+
 
 
 
