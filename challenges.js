@@ -18,12 +18,25 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee(overdue_day){
+let perday = 0.25;
+let total = perday * overdue_day;
+return total;
+}
+let overdueDay = parseInt(prompt("Enter number of overdue days:"));
+console.log(`The late fee is $${calculateLateFee(overdueDay)}.`);
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+const calculateLateFe = function(overdue_days){
+   let perdays = 0.25;
+   let totals = perdays * overdue_days;
+   return totals;
+   }
+   let overdue_Days = parseInt(prompt("Enter number of overdue days:"));
+   console.log(`The late fee is $${calculateLateFe(overdue_Days)}.`);
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -44,12 +57,47 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function findColorMeaning(color) {
 
+   if (color === "blue") {
+       console.log("Blue: You love calm and peace.");
+   } else if (color === "red") {
+       console.log("Red: You are passionate and bold.");
+   } else if (color === "green") {
+       console.log("Green: You are connected to nature.");
+   } else if (color === "yellow") {
+       console.log("Yellow: You radiate happiness and energy.");
+   } else {
+       console.log("That's a unique choice!");
+   }
+}
+
+
+let favoriteColors = prompt("Enter your favorite color:");
+findColorMeaning(favoriteColors);
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+const findColorMeanings = (colors) => {
+
+   if (colors === "blue") {
+       console.log("Blue: You love calm and peace.");
+   } else if (colors === "red") {
+       console.log("Red: You are passionate and bold.");
+   } else if (colors === "green") {
+       console.log("Green: You are connected to nature.");
+   } else if (colors === "yellow") {
+       console.log("Yellow: You radiate happiness and energy.");
+   } else {
+       console.log("That's a unique choice!");
+   }
+}
+
+
+let favoriteColor = prompt("Enter your favorite color:");
+findColorMeaning(favoriteColor);
 
 
 /*
@@ -68,11 +116,23 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase(clientName , caseNumber) {
+   console.log(clientName , caseNumber);
+
+}
+
+logCase("maxamed", 123);
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
+const logCases=(clientName , caseNumber)=> {
+   console.log(clientName , caseNumber);
+
+}
+
+logCase("maxamed", 123);
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -94,11 +154,34 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance(students, isPresent ) {
+   if (isPresent) {
+      console.log(`${students} is present.`);
+   }
+   else
+   {
+      console.log(`${students} is absent.`);
+   }  
+}
+ markAttendance("maxamed", true);
+ markAttendance("Amina",false);
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+
+
+const markAttendances =function (students, isPresent)  {
+   if (isPresent) {
+      console.log(`${students} is present.`);
+   } else {
+      console.log(`${students} is absent.`);
+   }  
+};
+
+markAttendance("maxamed", true);
+markAttendance("Amina", false);
 
 
 /*
@@ -135,3 +218,39 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+function calculateAverage(score1, score2, score3) {
+   return (score1 + score2 + score3) / 3;
+}
+
+function determineGrade(average) {
+   if (average >= 90) {
+       
+   } else if (average >= 80) {
+       return "B";
+   } else if (average >= 70) {
+       return "C";
+   } else {
+       return "F";
+   }
+}
+
+function generateReport(studentName, score1, score2, score3) {
+   let average = calculateAverage(score1, score2, score3);
+   let letterGrade = determineGrade(average);
+   return `${studentName} - Average Score: ${average.toFixed(2)}, Grade: ${letterGrade}`;
+}
+
+function logCase(clientName, caseNumber) {
+   console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+
+
+let studentName = prompt("Enter student's name:");
+let score1 = parseFloat(prompt("Enter first test score:"));
+let score2 = parseFloat(prompt("Enter second test score:"));
+let score3 = parseFloat(prompt("Enter third test score:"));
+
+
+console.log(generateReport(studentName, score1, score2, score3));
+
