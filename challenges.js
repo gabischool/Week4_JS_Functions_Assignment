@@ -17,14 +17,31 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function calculateLateFee(overDuedays){
+   const feeperDay = 0.25;
+   const lateFee = overDuedays * feeperDay
+   console.log(lateFee);
+}
+const overDuedaysNumber= prompt("enter overduedays");
+calculateLateFee(overDuedaysNumber);
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+// const calculateLateFee function(overDuedays){
+//    console.log("the late fee is $" + lateFee.toFixed(2) + ".")
+// }
+// calculateLateFee(overDuedaysNumber);
 
+const calculateLateFe = function(overDuedays){
+   const feeperDay =0.25
+   const lateFee = overDuedays * feeperDay
+   console.log(lateFee)
+}
+const overdueN = prompt("enter overdue number")
 
-
+calculateLateFe(overdueN)
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
 
@@ -44,11 +61,48 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function findColorMeaning(color){
+   if(color==="Blue"){
+      console.log("Blue: You love calm and peace.")
+   }
+   else if(color==="Red"){
+      console.log("Red: You are passionate and bold.")
+   }
+   else if(color==="Green"){
+      console.log("Green: You are connected to nature.")
+   }
+   else if(color==="Yellow"){
+      console.log("Yellow: You radiate happiness and energy.")
+   }
+   else{
+      console.log("That's a unique choice!")
+   }
+}
+const func = prompt("what is your favorite color")
+findColorMeaning(func)
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+const ColorMean=(color)=>{
+   if(color==="Blue"){
+      console.log("Blue: You love calm and peace.")
+   }
+   else if(color==="Red"){
+      console.log("Red: You are passionate and bold.")
+   }
+   else if(color==="Green"){
+      console.log("Green: You are connected to nature.")
+   }
+   else if(color==="Yellow"){
+      console.log("Yellow: You radiate happiness and energy.")
+   }
+   else{
+      console.log("That's a unique choice!")
+   }
+}
+const kalar = prompt("enter ur favorite color")
+ColorMean(kalar)
 
 
 
@@ -68,11 +122,20 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase(name, Number){
+   console.log(name, Number)
+ }
+ logCase("John Doe", 12345)
+
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
+const lCase = (name, Number)=> {
+   console.log(name, Number)
+}
+lCase("John Doe", 12345)
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -96,9 +159,20 @@ Output: "Amina is present."
 
 
 
+function markAttendance(studentName, isPresent){
+   console.log(`${studentName} is ${isPresent?"present":"absent"}`)   }
+markAttendance("Amina" , true);
+
+
+
+
 // Extra Task:
 // - Convert the function into a function expression.
 
+const markAttence= function(studentName,isPresent){
+   console.log(`${studentName} is ${isPresent?"present":"absent"}`)
+ }
+ markAttence("Amina", true)
 
 
 /*
