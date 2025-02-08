@@ -31,7 +31,7 @@ calculateLateFee();
 // Extra Task:
 // - Convert the function into a function expression.
 
-const calculateLateFee = function(){
+/*const calculateLateFees = function(){
    const feePerDay = 0.25;
 let overdueDays= prompt("what is your overdueDays");
    overdueDays=parseInt(overdueDays);
@@ -40,6 +40,7 @@ let overdueDays= prompt("what is your overdueDays");
 
 
 }
+calculateLateFees()
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -87,7 +88,7 @@ findColorMeaning()
 // - Rewrite the function using an arrow function.
 
 
-const findColorMeaning = ()=>{
+/*const findColor = ()=> {
    let color= prompt("what is your favorite color");
   
    
@@ -103,10 +104,10 @@ console.log("You love calm and peace")
    else if(color === "yellow"){
       console.log("You radiate happiness and energy.")
    }else{
-      console.log("that is unique choice")
+      console.log("that is unique choice")}
 
 }
-findColorMeaning()
+findColor()
 
 
 /*
@@ -135,7 +136,7 @@ logCase("mohamed", 2771)
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
-const logCase = (clientName , caseNumber)=>{
+/*const logCase = (clientName , caseNumber)=>{
    console.log("case #2771 : mohamed's case is now logged")
 
 }
@@ -174,7 +175,7 @@ markAttendance("studentName" , true)
 // Extra Task:
 // - Convert the function into a function expression.
 
-const markAttendance = function(studentName, isPresent){
+/*const markAttendance = function(studentName, isPresent){
    if (isPresent === true ){
       console.log("mohamed is present.");}
       else{
@@ -277,7 +278,7 @@ function testScores(){
    let averageScore = (score1 + score2 + score3) / 3 ;
    console.log("student name:" , studentName)
    console.log("test scores", score1 , score2, score3)
-   console.log("average score", averageScore.toFixed(2));
+   console.log("average score", averageScore.toFixed(2));}
    
-} 
+ 
 testScores()
