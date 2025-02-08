@@ -30,7 +30,7 @@ const sayHi = function() {
    console.log("hi")
 }
 
-
+sayHi();
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
