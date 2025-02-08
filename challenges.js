@@ -18,12 +18,19 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// function sayHi() {
+//    console.log("HELLO")
+// }
 
-
+// sayHi()
 // Extra Task:
 // - Convert the function into a function expression.
 
+const sayHi = function() {
+   console.log("hi")
+}
 
+sayHi();
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
