@@ -18,12 +18,32 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee(overduedays){ 
+   const result = overduedays*0.25 
+
+console.log("The late fee", result)  
+
+   
+
+
+}
+
+calculateLateFee(10)
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+const calculateFee = function(overduedays)
+{
+   
+   const result = overduedays*0.25 
 
+   console.log("The late fee", result)     
+   
+}
 
+calculateFee(10)
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,10 +65,43 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning (favoritecolor) {
+   
+   let findColorMeaning=prompt("enter your favorite color"); 
 
+if (findColorMeaning =="blue") 
+   
+   {console.log ("Blue: You love calm and peace.")}
+
+   else if (findColorMeaning=="green") {console.log ("Green:You are connected to nature.") }
+
+   else if (findColorMeaning=="red") {console.log ("Red: You are passionate and bold.")}
+
+   else if (findColorMeaning=="yellow") {console.log("Yellow: You radiate happiness and energy.")}
+
+   else {console.log ("That's a unique choice!")}
+
+
+   }
+   
+    findColorMeaning ("blue")
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+
+const findColor = (blue) => console.log (" Blue: You love calm and peace.");
+if (findColorMeaning =="blue") 
+   
+   {console.log ("Blue: You love calm and peace.")}
+
+   else if (findColorMeaning=="green") {console.log ("Green:You are connected to nature.") }
+
+   else if (findColorMeaning=="red") {console.log ("Red: You are passionate and bold.")}
+
+   else if (findColorMeaning=="yellow") {console.log("Yellow: You radiate happiness and energy.")}
+
+   else {console.log ("That's a unique choice!")}
+
 
 
 
@@ -68,10 +121,27 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase (clientName, clientNumber) { 
+
+ console.log (`Case ${clientNumber}: ${clientName}'s  case is now logged.`)
+
+ }
+
+logCase ("abdi mohammed",1664)
+
+
+
+
+
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+
+const  cases = (clientName, clientNumber)  => console.log (`Case ${clientNumber}: ${clientName}'s case is now logged.`);
+
+cases("abdi",12245)
+
 
 
 /*
@@ -94,10 +164,52 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance (studentName,isPresent) {
 
+
+if (isPresent==true)
+
+
+{console.log ( ` ${studentName} is present.`)}
+
+ else if (isPresent=false) {console.log (`${studentName}is absent.`)}
+
+
+
+
+}
+
+markAttendance ("abdi",true)
+
+
+
+
+
+   
+
+
+
+
+
+
+  
 
 // Extra Task:
 // - Convert the function into a function expression.
+const attendance = function(studentName,isPresent){
+
+   if (isPresent==true)
+
+{console.log ( ` ${studentName} is present.`)}
+      
+      else if (isPresent==false) {console.log (`${studentName} is absent.`)}
+
+
+}
+
+
+attendance("ahmed",false)
+
 
 
 
