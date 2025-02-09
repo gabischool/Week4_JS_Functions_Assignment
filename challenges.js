@@ -19,20 +19,21 @@ Output: "The late fee is $2.50."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 function calculateLateFee()     {  
    const overdueDays = parseInt(prompt("Enter the number of overdue days:")); 
-     const lateFee = overdueDays * 0.25; 
+     const lateFee = overdueDays * 0.25; { 
    console.log(`The late fee is $${ lateFee.toFixed(2)}.`);
    } 
-   calculateLateFee() 
+}
+   calculateLateFee()
 
 // Extra Task:
 // - Convert the function into a function expression.
 const calculateLateFeee = function() {
    const overdueDays = parseInt(prompt("Enter the number of overdue days:")); 
-   const lateFee = overdueDays * 0.25; 
-   console.log(`The late fee is $${lateFee.toFixed(2)}.`); 
-};
-
-calculateLateFeee();
+   const lateFee = overdueDays * 0.25; {
+   console.log(`The late fee is $${lateFee.toFixed(2)}.`);
+   }
+}
+calculateLateFeee()
 
 
 
@@ -55,24 +56,37 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-function findColorMeaning() {
+function findColorMeaning() 
+{
    const color = prompt("What is your favorite color?");
    switch (color) {
-       case "blue":
+       case "blue": 
+       {
            console.log("Blue: You love calm and peace.");
+         }
            break;
        case "red":
+        {
            console.log("Red: You are passionate and bold.");
+        }
            break;
        case "green":
+        {
            console.log("Green: You are connected to nature.");
+        }
            break;
-       case "yellow":
-           console.log("Yellow: You radiate happiness and energy.");
+       case "yellow": 
+       { 
+           console.log("Yellow: You radiate happiness and energy."); 
+        }
            break;
        default:
-           console.log("That's a unique choice!"); }
-   }
+         {
+           console.log("That's a unique choice!"); 
+        }
+    }
+}
+
 findColorMeaning()
 
 
@@ -84,22 +98,32 @@ const findColourMeaning = () => {
    
    switch (color) { 
      case "blue": 
+     {
        console.log("Blue: You love calm and peace."); 
+   }
        break; 
      case "red": 
+     {
        console.log("Red: You are passionate and bold."); 
+    }
        break; 
      case "green": 
+     {
        console.log("Green: You are connected to nature."); 
+    }
        break; 
      case "yellow": 
+     {
        console.log("Yellow: You radiate happiness and energy."); 
+    }
        break; 
      default: 
+     {
        console.log("That's a unique choice!"); 
+    }
        break; 
    } 
- }; 
+ }
   
  findColourMeaning() 
  
