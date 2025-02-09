@@ -18,7 +18,10 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function calculateLateFee(){
+   console.log("The late fee is $[2.50]")
+   }
+   calculateLateFee(10)
 
 // Extra Task:
 // - Convert the function into a function expression.
