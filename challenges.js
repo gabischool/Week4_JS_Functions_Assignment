@@ -17,13 +17,21 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function calculatelatefee (overdue){
+   const result =overdue*0.25
+   console.log("the late fee is ", result)
+}
+calculatelatefee(10)
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+   const calculateLateFee10=function(overdue){
+      const result=overdue*0.25
+      console.log("the late fee is ", result)
+   }
+    calculateLateFee10(10)
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -44,20 +52,41 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+function findColorMeaning(color){
+  if(color=="red"){
+   console.log("Red: You are passionate and bold.")
+} else if (color=="blue"){
+console.log("blue:You love calm and peace")
+} else if (color=="Green"){
+ console.log("Green: You are connected to nature.")
+} else if (color=="yellow"){
+  console.log("yellow: You  radiate happiness and energy.")
+} else ("That's a unique choice!")
+}
+findColorMeaning("blue")
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+const findColorMeaning10=()=>{
+const color10=prompt("what is your favourite color machine")
+if(color10==="red"){
+   return ("Red: You are passionate and bold.")
+} else if (color10==="blue"){
+return"blue:You love calm and peace"
+} else if (color10==="Green"){
+ return"Green: You are connected to nature."
+} else if (color10==="yellow"){
+  return "yellow: You  radiate happiness and energy."
+} else "That's a unique choice!"
+}
 
-
-
+console.log(findColorMeaning10())
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
 
 You’re a lawyer, and you’ve been assigned to organize your case files. 
 Write a function called `logCase` that takes the client's name and 
-the case number as parameters. For each case, log:
+the as parameters. For each case, log:
 
 "Case #[caseNumber]: [clientName]'s case is now logged."
 
@@ -67,12 +96,19 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function logCase(clientName,caseNumber ){
+  console.log("caseNumber,clientName: abdullahi Doe's case is now logged")
+}
+logCase("Abdullahi", 8027)
 
 
 // Extra Task:
-// - Rewrite the function as an arrow function.
-
+// Convert the function into arrow function
+ const logCase4=(clientName,caseNumber)=> {
+   return ("caseNumber,clientName: abdullahi Doe's case is now logged")
+   
+ }
+console.log(logCase4())
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -93,45 +129,57 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+function markAttendance(studentName, isPresent){
+if (isPresent){
+   console.log(`${studentName}ispresent.`)
+   } else {
+      console.log(`${studentName},isabsent`)}
 
 // Extra Task:
 // - Convert the function into a function expression.
+const markAttendance10=function(studentName,isPresent){
+   if (isPresent){
+      console.log(`$ {studentName} ispresent`)
+   }else
+   { console.log(`${studentName}, isabsent`)
+   
+}
+}
+markAttendance10("Amina", true)
+markAttendance10("Amina", false)
 
 
+// /*
+// STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
 
-/*
-STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
+// You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
 
-You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
+// 1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
 
-1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
+// 2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
+//    - "A" for average scores of 90 and above
+//    - "B" for scores between 80 and 89
+//    - "C" for scores between 70 and 79
+//    - "F" for scores below 70
 
-2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
-   - "A" for average scores of 90 and above
-   - "B" for scores between 80 and 89
-   - "C" for scores between 70 and 79
-   - "F" for scores below 70
+// 3. Write a third function called `generateReport` that:
+//    - Takes a student's name and three test scores as parameters.
+//    - Uses `calculateAverage` to calculate the average score.
+//    - Uses `determineGrade` to find the letter grade.
+//    - Returns a full report string in this format:
+//      "[StudentName] - Average Score: [average], Grade: [letterGrade]"
 
-3. Write a third function called `generateReport` that:
-   - Takes a student's name and three test scores as parameters.
-   - Uses `calculateAverage` to calculate the average score.
-   - Uses `determineGrade` to find the letter grade.
-   - Returns a full report string in this format:
-     "[StudentName] - Average Score: [average], Grade: [letterGrade]"
+// 4. Finally, use the `prompt` function to input the student’s name and three test scores, and display the generated report using `console.log`.
 
-4. Finally, use the `prompt` function to input the student’s name and three test scores, and display the generated report using `console.log`.
+// Example:
+// User Input:
+// Name: Amina
+// Scores: 85, 90, 78
 
-Example:
-User Input:
-Name: Amina
-Scores: 85, 90, 78
+// Output:
+// "Amina - Average Score: 84.33, Grade: B"
 
-Output:
-"Amina - Average Score: 84.33, Grade: B"
+// Extra Credit:
+// - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
+// - Use an arrow function for at least one of the functions.
 
-Extra Credit:
-- Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
-- Use an arrow function for at least one of the functions.
-*/
