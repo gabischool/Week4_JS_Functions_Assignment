@@ -18,12 +18,60 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function calculateLateFee() {
+   
+   let overdueDays = prompt("Enter the number of overdue days:");
 
+// Input=Number
+overdueDays = Number(overdueDays);
+
+if (!isNaN(overdueDays) && overdueDays >= 0) 
+   {
+
+// Overdue days calculation
+
+const lateFee = overdueDays * 0.25;
+
+
+console.log(`The late fee is $${lateFee.toFixed(2)}.`);
+
+} 
+
+else {
+   // invalid input message 
+   console.log("Please enter valid number")
+}}
+
+calculateLateFee() */
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+ const calculateLateFee = function() {
+   
+   let overdueDays = prompt("Enter the number of overdue days:");
 
+// Input=Number
+overdueDays = Number(overdueDays);
+
+if (!isNaN(overdueDays) && overdueDays >= 0) 
+   {
+
+// Overdue days calculation
+
+const lateFee = overdueDays * 0.25;
+
+
+console.log(`The late fee is $${lateFee.toFixed(2)}.`);
+
+} 
+
+else {
+   // invalid input message 
+   console.log("Please enter valid number")
+}}
+
+calculateLateFee()
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,12 +93,64 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+ /* function findColorMeaning () {
+   let color = prompt("Enter your favorite color.");
 
+   // Input = lower case
+
+   color = color.toLowerCase();
+
+   if ( color === "blue")
+      {console.log("You love calm and peace.") }
+
+      else if (color === "red"
+      ) 
+      {console.log("You are passionate and bold.")}
+
+      else if (color === "green") 
+      {console.log("You are connected to nature.")}
+
+      else if (color === "yellow)
+      {console.log("You radiate happiness and energy.")}
+
+      else {console.log("That's a unique choice!")}
+
+
+
+}
+
+findColorMeaning () */
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+const findColorMeaning = () => {
+   let color = prompt("Enter your favorite color.");
 
+   // Input = lower case
+
+   color = color.toLowerCase();
+
+   if ( color === "blue")
+      {console.log("You love calm and peace.") }
+
+      else if (color === "red"
+      ) 
+      {console.log("You are passionate and bold.")}
+
+      else if (color === "green") 
+      {console.log("You are connected to nature.")}
+
+      else if (color === "yellow")
+      {console.log("You radiate happiness and energy.")}
+
+      else {console.log("That's a unique choice!")}
+
+
+
+}
+
+findColorMeaning ()
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -68,12 +168,27 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function logCase (clientName, caseNumber) {
+
+console.log(`claient name ${clientName} and client case number ${caseNumber} cae is now logged`)
 
 
+
+}
+
+logCase("Mohamed", 534261)*/
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
+const logCase = (clientName, caseNumber) => {
 
+   console.log(`claient name ${clientName} and client case number ${caseNumber} cae is now logged`)
+   
+   
+   
+   }
+   
+   logCase("Mohamed", 534261)
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
@@ -94,12 +209,31 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function markAttendance (studentName, isPresent) {
 
 
+   if (isPresent)
+
+      {console.log(`Student Name ${studentName} is present`)}
+
+      else {console.log(`Student Name ${studentName} is Absent`)}
+}
+
+markAttendance("Asma", false)*/
 // Extra Task:
 // - Convert the function into a function expression.
 
+const markAttendance = function(studentName, isPresent) {
 
+
+   if (isPresent)
+
+      {console.log(`Student Name ${studentName} is present`)}
+
+      else {console.log(`Student Name ${studentName} is Absent`)}
+}
+
+markAttendance("Asma", false)
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
