@@ -17,13 +17,30 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function calculateLateFee(){
 
+   const feePerDay = 0.25;
+let overdueDays= prompt("what is your overdueDays");
+   overdueDays=parseInt(overdueDays);
+   const totalFee = overdueDays * feePerDay ;
+   console.log(`the late fee is ${totalFee.toFixed(2)}.`)
 
+}
+calculateLateFee();
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+/*const calculateLateFees = function(){
+   const feePerDay = 0.25;
+let overdueDays= prompt("what is your overdueDays");
+   overdueDays=parseInt(overdueDays);
+   const totalFee = overdueDays * feePerDay ;
+   console.log(`the late fee is ${totalFee.toFixed(2)}.`)
 
+
+}
+calculateLateFees()
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,11 +62,52 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning(){
+   let color= prompt("what is your favorite color");
+  
+   
+   if (color === "red"){
+      console.log("you are passionate and bold")
+   }
+   else if(color === "blue"){
+console.log("You love calm and peace")
+   }
+   else if(color === "green"){
+      console.log("You are connected to nature")
+   }
+   else if(color === "yellow"){
+      console.log("You radiate happiness and energy.")
+   }else{
+      console.log("that is unique choice")
+   }
 
+}
+findColorMeaning()
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+
+/*const findColor = ()=> {
+   let color= prompt("what is your favorite color");
+  
+   
+   if (color === "red"){
+      console.log("you are passionate and bold")
+   }
+   else if(color === "blue"){
+console.log("You love calm and peace")
+   }
+   else if(color === "green"){
+      console.log("You are connected to nature")
+   }
+   else if(color === "yellow"){
+      console.log("You radiate happiness and energy.")
+   }else{
+      console.log("that is unique choice")}
+
+}
+findColor()
 
 
 /*
@@ -67,13 +125,22 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function logCase(clientName , caseNumber){
+   
+   console.log(`case #2771 : mohamed's case is now logged`)
+}
+logCase("mohamed", 2771)
 
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
+/*const logCase = (clientName , caseNumber)=>{
+   console.log("case #2771 : mohamed's case is now logged")
 
+}
+logCase("mohamed", 2771)
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
@@ -93,13 +160,29 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance (studentName, isPresent){
+   if (isPresent === true ){
+      console.log("mohamed is present.");}
+      else{
+         console.log("mohamed is absent.")
+      }
+   
+}
+markAttendance("studentName" , true)
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+/*const markAttendance = function(studentName, isPresent){
+   if (isPresent === true ){
+      console.log("mohamed is present.");}
+      else{
+         console.log("mohamed is absent.")
+      }
+}
+markAttendance("studentName" , true)
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
@@ -135,3 +218,67 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+//1
+function calculateAverage(score1, score2, score3){
+   return(score1 + score2 + score3 ) / 3 ;
+}
+let average = calculateAverage(85, 90,69);
+console.log("the average is", average)
+
+//2
+/*const  determineGrade = (averageScore)=> {
+   
+   if (averageScore >= 90){
+      return"A";}
+     else  if (averageScore >= 80){
+         return"B";}
+       else   if (averageScore >= 70){
+            return"C";}
+            else {
+               return"F";}
+}
+console.log(determineGrade(60));*/
+
+//3
+function calculateAverage(score1 , score2 , score3){
+   return (score1 + score2 + score3)/ 3 ;
+}
+//
+
+function  determineGrade(averageScore){
+   if (averageScore >= 90){
+      return"A";}
+     else  if (averageScore >= 80){
+         return"B";}
+       else   if (averageScore >= 70){
+            return"C";}
+            else {
+               return"F";}
+            }
+
+//
+function generateReport(studentName , score1 , score2 , score3 ){
+   const average = calculateAverage(score1, score2 , score3);
+   const Grade = determineGrade(average) ;
+   return `${studentName}'s averageScore: ${average.toFixed(2)} 
+   Grade:${Grade}`
+}
+const report =
+generateReport("mohamed", 85 ,92 ,78)
+console.log(report);
+
+//4
+function testScores(){
+   
+   let studentName =prompt("enter your name" );
+   let score1 =parseFloat(prompt("enter your first test score"));
+   let score2 =parseFloat( prompt("enter your second test score"));
+
+   let score3=parseFloat( prompt("enter your third test score"));
+   let averageScore = (score1 + score2 + score3) / 3 ;
+   console.log("student name:" , studentName)
+   console.log("test scores", score1 , score2, score3)
+   console.log("average score", averageScore.toFixed(2));}
+   
+ 
+testScores()
