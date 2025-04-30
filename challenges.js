@@ -18,7 +18,26 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// function calculateLateFee(overdueDays,fee) {
+//       overdueDays=prompt("Enter number of days:");
+//       fee=overdueDays*0.25;
+//       console.log(`the late fee is ${fee}`);
+// }
 
+// calculateLateFee();
+function calculateLateFee(overdueDays) {
+   const feePerDay = 0.25;
+   return overdueDays * feePerDay;
+}
+
+const overdueDays = parseInt(prompt("Enter the number of overdue days:"), 10);
+
+if (!isNaN(overdueDays) && overdueDays >= 0) {
+   const fee = calculateLateFee(overdueDays);
+   console.log(`The late fee is $${fee.toFixed(2)}`);
+} else {
+   console.log("Please enter a valid number of overdue days.");
+}
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -44,12 +63,51 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+ function findColorMeaning(){
+   const color =prompt("Enter your favorite color");
+   switch(color){
+      case "blue":
+         console.log("blue :you love calm and peace");
+      break;
+   case "red":
+      console.log("red : you are passinate and bold");
+      break;
+   case "green":
+      console.log("green: you are connected to nature");
+      break;
+   case "yellow":
+      console.log("yellow :you are radiate and energy");   
+      break;
+   default:
+      console.log(`${color} that is unique choice `);
+   }
+   }
+   findColorMeaning();
+ 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
+  
+ let findColorMeaning2=() =>{
+   let color2 =prompt("enter your fav color:")
+   switch (color2){
+      case "red":
+         console.log("red : you are passinate and bold");
+         break;
+      case "green":
+         console.log("green: you are connected to nature");
+         break;
+      case "yellow":      
+      console.log("yellow :you are radiate and energy");   
+         break;
+      case "blue":
+         console.log("blue :you love calm and peace");
+         break;
+      default:
+         console.log(`${color2} that is unique choice `);
+      }
+ }
+ findColorMeaning2()
 
 
 /*
@@ -68,7 +126,10 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function logCase(name,number){
+   console.log(`case ${number} :${name}'s case is now logged`);
+}
+logCase("john doe","12345");
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
@@ -94,11 +155,29 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance(studentName,isPresent){
+ if(isPresent){
+   console.log(`${studentName} is present`)
+ }
+ else{
+   console.log(`${studentName} is absent`)
+ }
+}
 
+markAttendance("amina",true);
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+ 
+const markAttendance2=function(studentName,isPresent){
+   if(isPresent){
+      console.log(`${studentName} is present`)
+    }
+    else{
+      console.log(`${studentName} is absent`)
+    }
+}
+markAttendance2("cabdi",false)
 
 
 /*
