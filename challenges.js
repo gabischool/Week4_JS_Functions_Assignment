@@ -23,7 +23,11 @@ Output: "The late fee is $2.50."
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+const add = function(num1, num2) {
+   return num1 + num2
+ }
+ 
+ console.log(add(3, 5))
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
