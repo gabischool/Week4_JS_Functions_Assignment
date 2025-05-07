@@ -22,3 +22,5 @@ With some basic JavaScript principles in hand, we can now expand our skills out 
 ## Stretch Goals
 
 * [ ] Go back through the stretch problems that you skipped over and complete as many as you can.
+
+
