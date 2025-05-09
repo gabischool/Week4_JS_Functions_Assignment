@@ -1,74 +1,60 @@
 /*
-Task 1: Library Late Fee Calculator 🚀🚀🚀🚀
 
-You are working at a library and need to calculate late 
-fees for overdue books. Write a function called `calculateLateFee` 
-that takes the number of overdue days as input and calculates 
-the fee ($0.25 per day). Prompt the user to input the
-number of overdue days.
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-Log the result as:
+// ANSWERS 1
+// Task 1: Library Late Fee Calculator
 
-"The late fee is $[amount]."
+// function calculatelatefee(){
+//    const overduedays = prompt("waxd galisa tirada maalinleh dib loo dhigay:");
+//    const overduedaysfee = 0.25
+//    const totalfee = overduedays * overduedaysfee;
+//    console.log('the late fee is $' + totalfee.toFixed(2) + '.');
+// }
+// calculatelatefee();
 
-Example:
-User Input: 10
-Output: "The late fee is $2.50."
-*/
+
+/*
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
+// ANSWERS 2
 
-// Extra Task:
-// - Convert the function into a function expression.
+// Task 2 : Favorite Color Finder 
+
+// function findColorMeaning(){
+//    const color = prompt('midab noceya jeceshahay:');
+//    if (color === 'blue'){
+//       console.log('blue: you love calm and peace.');
+//       }
+//       else if (color === 'red'){
+//          console.log('red: you are passionarate and bold.')
+//       }
+//       else if (color === 'green'){
+//          console.log('green: you are connected to nature.')  
+//       }
+//       else if (color === 'yellow'){
+//          console.log('yellow: you radiate happiness and energy.')  
+//       }
+//       else{
+//          console.log('thats a unique choice')
+//       }
+// } findColorMeaning();
+
 
 
 
 /*
-Task 2 : Favorite Color Finder 🚀🚀🚀🚀
 
-You are designing a game that asks players for their favorite color. 
-Write a function called `findColorMeaning` that takes a color as input 
-(prompt the user) and logs the following meanings:
+//ANSWERS 3
+// Task 3 : Lawyer's Case Log
 
-- "Blue: You love calm and peace."
-- "Red: You are passionate and bold."
-- "Green: You are connected to nature."
-- "Yellow: You radiate happiness and energy."
-- For any other color: "That's a unique choice!"
+// function logCase(clientName, caseNumber){
+//    console.log('case #' + caseNumber + ':' +clientName + "'s case is now logged.");
 
-Example:
-User Input: "Red"
-Output: "Red: You are passionate and bold."
-*/
-
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
-
-// Extra Task:
-// - Rewrite the function using an arrow function.
-
-
-
-/*
-Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
-
-You’re a lawyer, and you’ve been assigned to organize your case files. 
-Write a function called `logCase` that takes the client's name and 
-the case number as parameters. For each case, log:
-
-"Case #[caseNumber]: [clientName]'s case is now logged."
-
-Example:
-Input: logCase("John Doe", 12345)
-Output: "Case #12345: John Doe's case is now logged."
-*/
-
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+// }
+// logCase("Mohamed", 12345);
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
@@ -93,6 +79,21 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+
+// ANSWERS 4
+// Task 4 : Attendance Tracker 🚀🚀🚀🚀
+
+// function markAttendance(studentName, isPresent) {
+//    if (isPresent){
+//       console.log(studentName + " is persent.");
+//    }
+//    else{
+//       console.log(studentName + " is absent.")
+//    }
+
+//    }
+// markAttendance("Amina", true);
+// markAttendance("mohamed", false);
 
 
 
@@ -135,3 +136,37 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+// ANSWERS 5
+// Task 5 : Student Grade Report Generator 🏈🏈🏈🏈
+
+// function calculateAverage(score1, score2, score3) {
+//    return (score1 + score2 + score3) / 3;
+// }
+// function determineGrade(average) {
+//    if (average >= 90) {
+//       return"A";
+//    }
+//    else if (average >=80){
+//    return "B";
+//    }
+//    else if (average >= 70){
+//       return "C";
+//    }
+//    else{
+//       return "F";
+//    }
+
+// }
+
+// function generateReport(studentName, score1, score2, score3) {
+//    const average = calculateAverage(score1, score2, score3);
+//    const letterGrade = determineGrade(average);
+//    return studentName + " - Average Score: " + average.toFixed(2) + ", Grade: " + letterGrade;
+// }
+// const studentName = prompt("Enter the student's name:");
+// const score1 = parseFloat(prompt("Enter the first test score:"));
+// const score2 = parseFloat(prompt("Enter the second test score:"));
+// const score3 = parseFloat(prompt("Enter the third test score:"));
+// const report = generateReport(studentName, score1, score2, score3);
+// console.log(report);
