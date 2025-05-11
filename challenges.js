@@ -18,11 +18,23 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function calculateLateFee() {
+   const overdue = prompt("How many days did you late")
+   const fee = overdue * 0.25;
+   
+   console.log(`The late fee is $${fee}.`)
+}
+calculateLateFee() 
 
 // Extra Task:
 // - Convert the function into a function expression.
+// const calculateLateFee = function() {
+//    const overdueDays = prompt("How many day are you late")
+//    const fee = overdueDays * 0.25;
+//    console.log(`The late fee is $${fee}.`)
+// }
 
+// calculateLateFee()
 
 
 /*
@@ -45,11 +57,54 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning() {
+   const color = prompt("what is your favorite color");
+
+  switch(color) {
+   case'blue':
+   console.log("You love calm and peace.");
+   break;
+   case"red":
+   console.log("You are passionate and bold.");
+   break;
+   case'green':
+   console.log("You are connected to nature.")
+   break;
+   case'yellow':
+   console.log("You radiate happiness and energy.")
+   break;
+   default:
+   console.log("That's a unique choice!");
+   break;
+  }
+}
+findColorMeaning()
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
+//  const findColorMeaning = () => {
+//    const color = prompt("what is your favorite color");
+   
+//    switch(color) {
+//       case'blue':
+//       console.log("You love calm and peace.");
+//       break;
+//       case'red':
+//       console.log("You are passionate and bold.");
+//       break;
+//       case'green':
+//       console.log("You are connected to nature.")
+//       break;
+//       case'yellow':
+//       console.log("You radiate happiness and energy.")
+//       break;
+//       default:
+//       console.log("That's a unique choice!");
+//       break;
+//       }
+//  }
+//  findColorMeaning()
 
 
 /*
@@ -68,11 +123,19 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function logCase(caseNumber, clientName) {
+   console.log(`Case # ${caseNumber}: ${clientName}'s case is now logged.`);
+    
+ }
+ logCase(12345, "John Doe");
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
+// const logCase = (caseNumber, clientName) => {
+//    console.log("Case #",caseNumber,":",clientName,"'s", "case is now logged.");
+// }
+// logCase(12345, "John Doe");
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -94,11 +157,28 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+const  markAttendance = () => {
+   let studentName = true;
+   if (studentName) {
+      console.log("Amina is present.")
+   } else {
+      console.log("Amina is absent.")
+   }
+}
+ markAttendance();
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+//  const  markAttendance = function() {
+//    let studentName = false;
+//    if (studentName) {
+//       console.log("Amina is present.")
+//    } else {
+//       console.log("Amina is absent.")
+//    }
+//  }
+//  markAttendance()
 
 
 /*
@@ -135,3 +215,35 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+const calculateAverage = (test1, test2, test3) => {
+   return (test1 + test2 + test3) / 3
+}
+
+const determineGrade = (average) => {
+  
+  if (average >= 90) {
+     return "A";
+  } else if (average >= 80) {
+     return "B";
+  } else if (average >= 70) {
+     return "C"
+  } else {
+     return "F"
+  }
+}
+
+
+function generateReport(studentName, test1, test2, test3){
+   // const student = prompt("Enter your name")
+   // const tes1 = Number(prompt("Enter your test1"));
+   // const tes2 = Number(prompt("Enter your test2"));
+   // const tes3 = Number(prompt("Enter your test3"));
+
+   const average = calculateAverage(test1, test2, test3);
+   const grade = determineGrade(average);
+   return `${studentName} - average Score: ${average}, Grade: ${grade}`
+}
+console.log(generateReport("amino", 85, 90, 78))
+
+// "[StudentName] - Average Score: [average], Grade: [letterGrade]"
