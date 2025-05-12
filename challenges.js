@@ -18,12 +18,29 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculatefee(){
+   const days=parseInt(prompt("how manay days late"))
+   const fee=0.25
+   const result=days*0.25;
+   console.log(`The late fee is $${result}`)
+}
+calculatefee()
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+const calculateLateFee1=function(){
+   const days=parseInt(prompt("how manay days late"))
+   const fee=0.25
+   const result=days*0.25;
+   console.log(`The late fee is $${result}`)
 
+
+  }
+
+  calculateLateFee1()
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,11 +62,55 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning(){
+   const color=prompt("enter you favorite color")
+   if(color=="blue"){
+      console.log("You love calm and peace.")
+   }
+   else if(color=="green"){
+      console.log("You are connected to nature.")
+   }
+   else if(color=="yellow"){
+      console.log("You radiate happiness and energy.")
+   }
+
+   else if(color=="red"){
+      console.log("You are passionate and bold.")
+   }
+   else {
+   console.log("That's a unique choice!")
+   }
+   
+}
+findColorMeaning()
+
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+
+const findColorMeanin=()=>{
+   const color=prompt("enter you favorite color")
+   if(color=="blue"){
+      console.log("You love calm and peace.")
+   }
+   else if(color=="green"){
+      console.log("You are connected to nature.")
+   }
+   else if(color=="yellow"){
+      console.log("You radiate happiness and energy.")
+   }
+
+   else if(color=="red"){
+      console.log("You are passionate and bold.")
+   }
+   else {
+   console.log("That's a unique choice!")
+
+   }
+}
+findColorMeanin()
 
 
 /*
@@ -68,11 +129,20 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase(caseNumber,clientName){
+   console.log(` case${caseNumber}${clientName}Doe's case is now logged`)
+}
+logCase(12345,"john")
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
+const logCase2=(caseNumber,clientName)=>{
+   console.log(` case${caseNumber}${clientName}Doe's case is now logged`)
+}
+
+logCase2(12345,"john")
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -93,12 +163,37 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance(name,isPresent){
+   if(isPresent){
+     console.log(`${name} is paresent`)
+   }
+   else {
+     console.log(`${name} is absent`)
+   }
+     
+  
+  
+  }
+  markAttendance("aamin","true")
+
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+
+const markAttendance2=function(name,isPresent){
+   if(isPresent){
+      console.log(`${name} is paresent`)
+    }
+    else {
+      console.log(`${name} is absent`)
+    }
+      
+
+}
+markAttendance2("cali","true")
 
 
 /*
@@ -135,3 +230,23 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+function calculateAverage(){
+   let grade=parseInt(prompt("enter your avarega"))
+   if(grade>=90){
+      console.log("GRADE A")
+   }
+   else if(grade>=80){
+      console.log("GRADE B")
+   }
+   else if(grade>=70){
+      console.log("GRADE C")
+   }
+   else if(grade>=60){
+      console.log("GRADE D")
+   }
+   else{
+      console.log("GRADE E")
+   }
+   }
+   calculateAverage()
