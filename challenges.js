@@ -15,13 +15,30 @@ Example:
 User Input: 10
 Output: "The late fee is $2.50."
 */
+//Task 1: is 
+function calculateLateFee() {
+  const day =prompt("Enter number of overdue days:");
+  const fee = day * 0.25
+  console.log(`The late fee is$ ${fee}`)
+}
+
+calculateLateFee();
+
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function sayHello() {
+  console.log("Hello!")
+}
+sayHello()
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+const Hello = function() {
+  console.log("Hello!")
+};
+Hello()
 
 
 
@@ -42,15 +59,39 @@ Example:
 User Input: "Red"
 Output: "Red: You are passionate and bold."
 */
+//tast2 is 
+function findColorMeaning() {
+  var color = prompt("Enter your favorite color")
+  color = color.toLowerCase();
+
+  if (color === "blue") {
+    console.log("Blue: You love calm and peace")
+  } else if (color === "red") {
+    console.log("Red: You are passionate and bold")
+  } else if (color === "green") {
+    console.log("Green: You are connected to nature")
+  } else if (color === "yellow") {
+    console.log("Yellow: You radiate happiness and energy")
+  } else {
+    console.log("That's a unique choice!");
+  }
+}
+
+findColorMeaning();
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function salaan() {
+  console.log("Hello!")
+};
+salaan()
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
-
+const salan = () => {
+  console.log("Hello!");
+};
+salan()
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -65,14 +106,30 @@ Example:
 Input: logCase("John Doe", 12345)
 Output: "Case #12345: John Doe's case is now logged."
 */
+//tast 3
+function logCase() {
+  const clientName = prompt("Enter the client's name:");
+  const caseNumber = prompt("Enter the case number:");
+  console.log(`Case #${caseNumber} : ${clientName}'s case is now logged`);
+}
+
+logCase();
+
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function hi() {
+  console.log("Hello!")
+};
+hi()
 
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
+const himan = () => {
+  console.log("Hello!");
+};
+himan()
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -91,13 +148,33 @@ Example:
 Input: markAttendance("Amina", true)
 Output: "Amina is present."
 */
+//tast 4
+function markAttendance(){
+  let studentName = prompt("Enter the student's name")
+  let isPresentInput = prompt("Is the student present? (yes/no)")
+  let isPresent = isPresentInput.toLowerCase() === "yes";
+  if (isPresent) {
+    console.log(studentName + " is present")
+  } else {
+    console.log(studentName + " is absent")
+  }
+}
+markAttendance()
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function ardey(){
+  console.log("waxaan ahey ardey")
+}
+ardey()
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+const ardey = function() {
+  console.log("waxaan ahey ardey");
+};
+
+ardey();
 
 
 
@@ -135,3 +212,30 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+function calculateAverage(score1, score2, score3) {
+  return (score1 + score2 + score3) / 3;
+}
+function determineGrade(average) {
+  if (average >= 90) {
+    return "A";
+  } else if (average >= 80) {
+    return "B";
+  } else if (average >= 70) {
+    return "C";
+  } else {
+    return "F";
+  }
+}
+
+function generateReport(name, s1, s2, s3) {
+  var avg = calculateAverage(s1, s2, s3);
+  var grade = determineGrade(avg);
+  console.log(name + " - Average Score: " + avg + ", Grade: " + grade);
+}
+
+var name = prompt("Enter student name:");
+var s1 = parseFloat(prompt("Enter score 1:"));
+var s2 = parseFloat(prompt("Enter score 2:"));
+var s3 = parseFloat(prompt("Enter score 3:"));
+
+generateReport(name, s1, s2, s3);
