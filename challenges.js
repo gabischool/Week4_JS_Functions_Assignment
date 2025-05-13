@@ -17,11 +17,25 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function calculateLateFee(days) {
+  const feePerDay = 0.25;
+  const totalFee = days * feePerDay;
+  console.log(`The late fee is $${totalFee.toFixed(2)}.`);
+}
+
+const overdueDays = prompt("Enter number of overdue days:");
+calculateLateFee(Number(overdueDays));
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+
+const calculateLateFeeExp = function(days) {
+  const fee = days * 0.25;
+  console.log(`The late fee is $${fee.toFixed(2)}.`);
+};
+
 
 
 
@@ -45,10 +59,43 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning(color) {
+
+  if (color === "blue") {
+    console.log("Blue: You love calm and peace.");
+  } else if (color === "red") {
+    console.log("Red: You are passionate and bold.");
+  } else if (color === "green") {
+    console.log("Green: You are connected to nature.");
+  } else if (color === "yellow") {
+    console.log("Yellow: You radiate happiness and energy.");
+  } else {
+    console.log("That's a unique choice!");
+  }
+}
+
+// Tusaale: isticmaal
+const favColor = prompt("What is your favorite color?");
+findColorMeaning(favColor);
+
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+const findColorMeaningArrow = (color) => {
+
+  if (color === "blue") {
+    console.log("Blue: You love calm and peace.");
+  } else if (color === "red") {
+    console.log("Red: You are passionate and bold.");
+  } else if (color === "green") {
+    console.log("Green: You are connected to nature.");
+  } else if (color === "yellow") {
+    console.log("Yellow: You radiate happiness and energy.");
+  } else {
+    console.log("That's a unique choice!");
+  }
+};
 
 
 
@@ -68,10 +115,21 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase(clientName, caseNumber) {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+
+
+logCase("nimcaan", 435);
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+
+const logCaseArrow = (clientName, caseNumber) => {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+};
+
 
 
 /*
@@ -94,11 +152,26 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance(studentName, isPresent) {
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+}
 
+markAttendance("mahamed", true);
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+const markAttendanceExp = function(studentName, isPresent) {
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+};
 
 
 /*
@@ -107,6 +180,8 @@ STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
 You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
 
 1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
+
+
 
 2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
    - "A" for average scores of 90 and above
@@ -135,3 +210,34 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+function calculateAverage(score1, score2, score3) {
+  return (score1 + score2 + score3) / 3;
+}
+
+function determineGrade(average) {
+  if (average >= 90) {
+    return "A";
+  } else if (average >= 80) {
+    return "B";
+  } else if (average >= 70) {
+    return "C";
+  } else {
+    return "F";
+  }
+}
+
+function generateReport(name, score1, score2, score3) {
+  const average = calculateAverage(score1, score2, score3);
+  const grade = determineGrade(average);
+  return `${name} - Average Score: ${average.toFixed(2)}, Grade: ${grade}`;
+}
+
+const studentName = prompt("Enter student name:");
+const score1 = Number(prompt("Enter score 1:"));
+const score2 = Number(prompt("Enter score 2:"));
+const score3 = Number(prompt("Enter score 3:"));
+
+const report = generateReport(studentName, score1, score2, score3);
+console.log(report);
+
