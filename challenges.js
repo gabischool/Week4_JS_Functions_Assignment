@@ -18,10 +18,45 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// function declaration.
+
+// function calculateLateFee(days) {
+//   let fee = days * 0.25;
+//   return fee;
+// }
+
+// let input = prompt("How many days is the book late?");
+// let daysLate = parseInt(input);
+
+// if (daysLate >= 0) {
+//   let totalFee = calculateLateFee(daysLate);
+//   alert("You need to pay $" + totalFee.toFixed(2));
+// } else {
+//   alert("Please enter a valid number.");
+// }
+
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+
+// Function expression
+let calculateLateFee = function(days) {
+  let fee = days * 0.25;
+  return fee;
+};
+
+let input = prompt("How many days is the book late?");
+let daysLate = parseInt(input);
+
+if (daysLate >= 0) {
+  let totalFee = calculateLateFee(daysLate);
+  alert("You need to pay $" + totalFee.toFixed(2));
+} else {
+  alert("Please enter a valid number.");
+}
+
 
 
 
@@ -45,10 +80,51 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// let color = prompt("What is your favorite color?");
+
+// function findColorMeaning(color) {
+//   color = color.toLowerCase();
+
+//   if (color === "blue") {
+//     alert("Blue: You love calm and peace.");
+//   } else if (color === "red") {
+//     alert("Red: You are passionate and bold.");
+//   } else if (color === "green") {
+//     alert("Green: You are connected to nature.");
+//   } else if (color === "yellow") {
+//     alert("Yellow: You radiate happiness and energy.");
+//   } else {
+//     alert("That's a unique choice!");
+//   }
+// }
+
+// findColorMeaning(color);
+
+
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+let color = prompt("What is your favorite color?");
+
+const findColorMeaning = (color) => {
+  color = color.toLowerCase();
+
+  if (color === "blue") {
+    alert("Blue: You love calm and peace.");
+  } else if (color === "red") {
+    alert("Red: You are passionate and bold.");
+  } else if (color === "green") {
+    alert("Green: You are connected to nature.");
+  } else if (color === "yellow") {
+    alert("Yellow: You radiate happiness and energy.");
+  } else {
+    alert("That's a unique choice!");
+  }
+};
+
+findColorMeaning(color);
+
 
 
 
@@ -68,36 +144,86 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// let name = prompt("Enter the client's name:");
+// let number = prompt("Enter the case number:");
+
+// function logCase(clientName, caseNumber) {
+//   alert("Case #" + caseNumber + ": " + clientName + "'s case is now logged.");
+// }
+
+// logCase(name, number);
+
+
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+let name = prompt("Enter the client's name:");
+let number = prompt("Enter the case number:");
+
+const logCase = (clientName, caseNumber) => {
+  alert("Case #" + caseNumber + ": " + clientName + "'s case is now logged.");
+};
+
+logCase(name, number);
+
 
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
-You’re a teacher tracking student attendance. Write a function called 
-`markAttendance` that takes a student’s name and a boolean `isPresent` 
-value. If the student is present, log:
+// You’re a teacher tracking student attendance. Write a function called 
+// `markAttendance` that takes a student’s name and a boolean `isPresent` 
+// value. If the student is present, log:
 
-"[studentName] is present."
+// "[studentName] is present."
 
-If the student is absent, log:
+// If the student is absent, log:
 
-"[studentName] is absent."
+// "[studentName] is absent."
 
-Example:
-Input: markAttendance("Amina", true)
-Output: "Amina is present."
-*/
+// Example:
+// Input: markAttendance("Amina", true)
+// Output: "Amina is present."
+// */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// let name = prompt("Enter the student's name:");
+// let presentInput = prompt("Is the student present? (yes or no)");
+
+// let isPresent = presentInput.toLowerCase() === "yes";
+
+// function markAttendance(studentName, isPresent) {
+//   if (isPresent) {
+//     alert(studentName + " is present.");
+//   } else {
+//     alert(studentName + " is absent.");
+//   }
+// }
+
+// markAttendance(name, isPresent);
+
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+let name = prompt("Enter the student's name:");
+let presentInput = prompt("Is the student present? (yes or no)");
+
+let isPresent = presentInput.toLowerCase() === "yes";
+
+// Function expression
+let markAttendance = function(studentName, isPresent) {
+  if (isPresent) {
+    alert(studentName + " is present.");
+  } else {
+    alert(studentName + " is absent.");
+  }
+};
+
+markAttendance(name, isPresent);
+
 
 
 
