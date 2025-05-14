@@ -242,44 +242,64 @@ Extra Credit:
 - Use an arrow function for at least one of the functions.
 */
 
-function calculateAverage (score1, score2, score3) {
-let celcelis = (score1 + score2 + score3) / 3
-console.log("celcelisku waa: " + celcelis)
-return celcelis;
+/*function calculateAverage (s1, s2, s3) {
+  let average = (s1 + s2 + s3) / 3
+  return average 
 }
-
-/*calculateAverage (70, 80, 90)
+ 
+calculateAverage (80, 90, 100)
 
 */
-function determineGrade (celcelis) {
-if (celcelis >= 90) {
-   return "A";
-} else if ((celcelis >= 80) && (celcelis < 90)) {
-   return "B"
-} else if ((celcelis >= 70) && (celcelis < 80)) {
-   return "C"
-} else {
-   return "F"
-}
-}
-
-let celcelis = calculateAverage(70, 80, 90);     
-let darajo = determineGrade(celcelis);       
-console.log("Darajadu waxa weeye: " + darajo);
 
 
-function generateReport (magac, score1, score2, score3) {
-   let celcelis = calculateAverage(score1, score2, score3)
-   let darajo = determineGrade(celcelis)
-   return (`${magac} - Average Score: ${celcelis}, Grade: ${darajo}`)
-}
 
-let magac = prompt("Magaca ardayga:")
+
+
+function determineGrade (averageScore) {
+   if (averageScore >= 90) {
+      return "A"
+   } else if ((averageScore >= 80) && ( averageScore < 90)) {
+      return "B"
+   } else if ((averageScore >= 70) && (averageScore < 80)) {
+      return "C"
+   } else {
+      return "F"
+   }
+} 
+
+
+
+
+function generateReport (StudentName, s1, s2, s3) {
+   let average = calculateAverage (s1, s2, s3)
+   let grade = determineGrade (average)
+   return (`${StudentName} - Average Score: ${average.toFixed(2)}, Grade: ${grade}`)}
+
+   let numberOfStudents = 3;
+
+for (let i = 0; i < numberOfStudents; i++) {
+
+   let studentName = prompt("your name is?:")
 let score1 = parseFloat(prompt("Score 1:"))
 let score2 = parseFloat(prompt("Score 2:"))
 let score3 = parseFloat(prompt("Score 3:"))
 
 
-let result = generateReport(magac, score1, score2, score3);
+let result = generateReport(studentName, score1, score2, score3);
 console.log(result)
+
+
+}
+
+
+
+// arrow function
+
+const calculateAverage = (s1, s2, s3) => {
+  let average = (s1 + s2 + s3) / 3
+  return average 
+}
+ 
+calculateAverage (80, 90, 100)
+
 
