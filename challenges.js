@@ -2,6 +2,7 @@
 Task 1: Library Late Fee Calculator 🚀🚀🚀🚀
 
 You are working at a library and need to calculate late 
+
 fees for overdue books. Write a function called `calculateLateFee` 
 that takes the number of overdue days as input and calculates 
 the fee ($0.25 per day). Prompt the user to input the
@@ -17,13 +18,16 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+function calculateLateFee(overdueDays) {
+  const feePerDay = 0.25;
+  const totalFee = overdueDays * feePerDay;
+  return `The late fee is $${totalFee.toFixed(2)}.`;
+}
+const overdueDays = prompt("Enter the number of overdue days:");
+console.log(calculateLateFee(overdueDays));
 
 // Extra Task:
 // - Convert the function into a function expression.
-
-
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -32,11 +36,18 @@ You are designing a game that asks players for their favorite color.
 Write a function called `findColorMeaning` that takes a color as input 
 (prompt the user) and logs the following meanings:
 
+
 - "Blue: You love calm and peace."
 - "Red: You are passionate and bold."
 - "Green: You are connected to nature."
 - "Yellow: You radiate happiness and energy."
 - For any other color: "That's a unique choice!"
+
+
+
+
+
+
 
 Example:
 User Input: "Red"
@@ -44,13 +55,22 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+let findColorMeaning = prompt("Enter your favorite color:");
 
-
+if (findColorMeaning === "blue") {
+  console.log("You love calm and peace");
+} else if (findColorMeaning === "red") {
+  console.log("You are passionate and bold");
+} else if (findColorMeaning === "breen") {
+  console.log("You are connected to nature");
+} else if (findColorMeaning === "yellow") {
+  console.log("You radiate happiness and energy");
+} else {
+  console.log("That's a unique choice!");
+}
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
-
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -67,12 +87,13 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+function logCase(clientName, caseNumber) {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+logCase("John Doe", 12345);
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -87,19 +108,27 @@ If the student is absent, log:
 
 "[studentName] is absent."
 
+
+
 Example:
 Input: markAttendance("Amina", true)
 Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+function markAttendance(studentName, isPresent) {
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+}
+const studentName = prompt("Enter the student's name:");
+const isPresent = prompt("Is the student present? (true/false)") === "true";
+markAttendance(studentName, isPresent);
 
 // Extra Task:
 // - Convert the function into a function expression.
-
-
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
