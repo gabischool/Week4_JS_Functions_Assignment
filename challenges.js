@@ -18,11 +18,25 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function calculateLateFee(){
+   const overdueDay = Number(prompt("Input the number of overdue days")) 
+   const costPerDay = 0.25; 
+   const fee = overdueDay * costPerDay;
+   console.log(`The late fee is $${fee}.`) 
+}
+calculateLateFee();
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+ //const calculateLateFee = function(){
+//    const overdueDay = Number(prompt("Input the number of overdue days")) 
+//    const costPerDay = 0.25; 
+//    const fee = overdueDay * costPerDay; 
+//    console.log(`The late fee is $${fee}.`) 
+// }
+
+// calculateLateFee(); 
 
 
 /*
@@ -45,11 +59,43 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function findColorMeaning(){
+   const favoriteColor = prompt("Enter Your Favorite Color"); 
+   if(favoriteColor === "Blue"){ 
+      console.log("Blue: You love calm and peace."); 
+   } else if(favoriteColor === "Red"){ 
+      console.log("Red: You are passionate and bold."); 
+   } else if(favoriteColor === "Green"){ 
+      console.log("Green: You are connected to nature.") 
+   } else if(favoriteColor === "Yellow"){ 
+      console.log("Yellow: You radiate happiness and energy.")  
+   } else { 
+      console.log("That's a unique choice!"); 
+   }
+}
 
+findColorMeaning();
+*/
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+// const findColorMeaning = () => {
+//    const favoriteColor = prompt("Enter Your Favorite Color"); 
+//    if(favoriteColor === "Blue"){
+//       console.log("Blue: You love calm and peace.");
+//    } else if(favoriteColor === "Red"){ 
+//       console.log("Red: You are passionate and bold."); 
+//    } else if(favoriteColor === "Green"){ 
+//       console.log("Green: You are connected to nature.") 
+//    } else if(favoriteColor === "Yellow"){ 
+//       console.log("Yellow: You radiate happiness and energy.") 
+//    } else { 
+//       console.log("That's a unique choice!"); 
+//    }
+// }
+
+// findColorMeaning();
 
 
 /*
@@ -68,10 +114,23 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function logCase (caseNumber, clientName){
+   const CaseMessage = `Case #${caseNumber}: ${clientName}'s case is now logged.`; 
+   console.log(CaseMessage); 
+}
 
+logCase(2039, "sawda oomar");
+*/
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+
+// const logCase = (caseNumber, clientName) =>{
+//    const CaseMessage = `Case #${caseNumber}: ${clientName}'s case is now logged`; 
+//    console.log(CaseMessage); 
+// }
+
+// logCase(2039, "sawda oomar"); 
 
 
 /*
@@ -88,18 +147,35 @@ If the student is absent, log:
 "[studentName] is absent."
 
 Example:
-Input: markAttendance("Amina", true)
-Output: "Amina is present."
+Input: markAttendance("sariin", true)
+Output: "sariin is present."+
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function markAttendance(studentName, isPresent){
+   
+   if(isPresent){ 
+      console.log(`${studentName} is present`); 
+   }else{ 
+      console.log(`${studentName} is absent`); 
+   }
+}
 
-
+markAttendance("soya", true); 
+*/
 // Extra Task:
 // - Convert the function into a function expression.
 
+// const markAttendance = (studentName, isPresent) =>{
+//    if(isPresent){ 
+//       console.log(`${studentName} Is Present`); 
+//    }else{ 
+//       console.log(`${studentName} Is Absent`); 
+//    }
+// }
 
+// markAttendance("sawda", false); 
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
