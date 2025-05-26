@@ -18,14 +18,29 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee() {
+  const daysLate = prompt("Enter the number of overdue days:");
+  const fee = Number(daysLate) * 0.25;
+  console.log(`The late fee is $${fee.toFixed(2)}.`);
+}
+
+calculateLateFee();
+
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+const calculateLateFeeExpr = function () {
+  const daysLate = prompt("Enter the number of overdue days:");
+  const fee = Number(daysLate) * 0.25;
+  console.log(`The late fee is $${fee.toFixed(2)}.`);
+};
 
 
 /*
+
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
 
 You are designing a game that asks players for their favorite color. 
@@ -45,12 +60,43 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning() {
+  let color = prompt("What's your favorite color?");
+  
+  color = color.toLowerCase();
 
+  if (color === "blue") {
+    console.log("Blue: You love calm and peace.");
+  } else if (color === "red") {
+    console.log("Red: You are passionate and bold.");
+  } else if (color === "green") {
+    console.log("Green: You are connected to nature.");
+  } else if (color === "yellow") {
+    console.log("Yellow: You radiate happiness and energy.");
+  } else {
+    console.log("That's a unique choice!");
+  }
+}
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+const findColorMeaning = () => {
+  let color = prompt("What's your favorite color?");
+  color = color.toLowerCase();
 
+  if (color === "blue") {
+    console.log("Blue: You love calm and peace.");
+  } else if (color === "red") {
+    console.log("Red: You are passionate and bold.");
+  } else if (color === "green") {
+    console.log("Green: You are connected to nature.");
+  } else if (color === "yellow") {
+    console.log("Yellow: You radiate happiness and energy.");
+  } else {
+    console.log("That's a unique choice!");
+  }
+};
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -68,12 +114,16 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function logCase(clientName, caseNumber) {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
-
+const logCaseArrow = (clientName, caseNumber) => {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+};
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
@@ -93,12 +143,24 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function markAttendance(studentName, isPresent) {
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+}
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+const markAttendanceExpression = function(studentName, isPresent) {
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+};
 
 
 /*
