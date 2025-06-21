@@ -18,11 +18,25 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const overdueDays = prompt("Input the number of overdue days?");
 
+function calculateLateFee(daysLate) {
+  const fee = daysLate * 0.25;
+  console.log(`The late fee is $${fee}`);
+}
+
+calculateLateFee(Number(overdueDays));
 
 // Extra Task:
 // - Convert the function into a function expression.
+const overdueDays = prompt("Input the number of overdue days?");
 
+const calculateLateFee = (daysLate) => {
+  const fee = daysLate * 0.25;
+  console.log(`The late fee is $${fee}`);
+}
+
+calculateLateFee(Number(overdueDays));
 
 
 /*
@@ -45,11 +59,53 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const favoriteColor = prompt("Input your favorite color:");
 
+function findColorMeaning(color) {
+  if (color.toLowerCase() === "blue") {
+    console.log("You love calm and peace",)
+  }
+ else if (color.toLowerCase() === "red") {
+    console.log("You are passionate and bold",)
+  }
+  else if (color.toLowerCase() === "green") {
+    console.log("You are connected to nature",)
+  }
+  else if (color.toLowerCase() === "yellow") {
+    console.log("You radiate happiness and energy",)
+  }
+  else {
+    console.log("That's a unique choice!");
+  }
+}
+ 
+  
+ findColorMeaning(favoriteColor);
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+const favoriteColor = prompt("Input your favorite color:");
 
+const findColorMeaning = (color) => {
+  if (color.toLowerCase() === "blue") {
+    console.log("You love calm and peace",)
+  }
+ else if (color.toLowerCase() === "red") {
+    console.log("You are passionate and bold",)
+  }
+  else if (color.toLowerCase() === "green") {
+    console.log("You are connected to nature",)
+  }
+  else if (color.toLowerCase() === "yellow") {
+    console.log("You radiate happiness and energy",)
+  }
+  else {
+    console.log("That's a unique choice!");
+  }
+}
+ 
+  
+ findColorMeaning(favoriteColor);
 
 
 /*
@@ -68,10 +124,20 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase(clientName, caseNumber) {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+
+logCase("John Doe", 12345);
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+const logCase = (clientName, caseNumber) => {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+
+logCase("John Doe", 12345);
 
 
 /*
@@ -93,7 +159,16 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance(studentName, isPresent) {
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+}
 
+markAttendance("Amina", true);
+markAttendance("Nur", false);
 
 
 // Extra Task:
@@ -135,3 +210,37 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+function calculateAverage(score1, score2, score3) {
+  return (score1 + score2 + score3) / 3;
+}
+
+
+function determineGrade(average) {
+  if (average >= 90) {
+    return "A";
+  } else if (average >= 80) {
+    return "B";
+  } else if (average >= 70) {
+    return "C";
+  } else {
+    return "F";
+  }
+}
+
+
+function generateReport(studentName, score1, score2, score3) {
+  const average = calculateAverage(score1, score2, score3);
+  const grade = determineGrade(average);
+  return `${studentName} - Average Score: ${average.toFixed(2)}, Grade: ${grade}`;
+}
+
+
+const studentName = prompt("Enter the student's name:");
+const score1 = Number(prompt("Enter score 1:"));
+const score2 = Number(prompt("Enter score 2:"));
+const score3 = Number(prompt("Enter score 3:"));
+
+
+const report = generateReport(studentName, score1, score2, score3);
+console.log(report);
