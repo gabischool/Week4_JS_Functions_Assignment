@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salmo’s Softball Hustle Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, select, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    #result {
+      margin-top: 20px;
+      background: #e7f3ff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🥎 Salmo’s Softball Hustle Tracker</h1>
+
+  <form id="softballForm">
+    <label>Drills Completed:
+      <input type="number" id="drills" required>
+    </label>
+    <label>Throws Made:
+      <input type="number" id="throws" required>
+    </label>
+    <label>Running (laps):
+      <input type="number" id="running" required>
+    </label>
+    <label>Your Mood:
+      <select id="mood">
+        <option value="pumped">🔥 Pumped</option>
+        <option value="tired">😴 Tired</option>
+        <option value="focused">🎯 Focused</option>
+      </select>
+    </label>
+    <button type="submit">Log Practice</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    document.getElementById('softballForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const drills = parseInt(document.getElementById('drills').value);
+      const throws = parseInt(document.getElementById('throws').value);
+      const running = parseInt(document.getElementById('running').value);
+      const mood = document.getElementById('mood').value;
+      
+      const total = drills + throws + running;
+      let message = `You completed <strong>${total}</strong> reps today. 💪<br>`;
+      
+      if (total >= 50) {
+        message += "🔥 You're on fire! Keep working hard.<br>";
+      } else if (total >= 20) {
+        message += "👏 Solid work. Consistency wins games!<br>";
+      } else {
+        message += "💡 A little practice is better than none. Proud of you!<br>";
+      }
+
+      switch (mood) {
+        case "pumped":
+          message += "🚀 That’s the hustle! You’re unstoppable!";
+          break;
+        case "tired":
+          message += "😌 Even champions rest. You’ve earned it.";
+          break;
+        case "focused":
+          message += "🎯 Every swing counts. Stay sharp.";
+          break;
+      }
+
+      document.getElementById('result').innerHTML = message;
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
