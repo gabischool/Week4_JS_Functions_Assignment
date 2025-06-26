@@ -18,11 +18,19 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*const numberOfDays = prompt("overdue-days")
+function calculateLateFee (overduedays) {
+   latefee = overduedays * 0.25
+   console.log(`The late fee is ${latefee}`)
+}
+calculateLateFee(numberOfDays)
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+//const calculateLateFee = function(overduedays) {
+  // latefee = overduedays * 0.25
+//}
 
 
 /*
@@ -44,11 +52,29 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+/*const Userinput = prompt("meanings")
+function findColorMeaning(color) {
+   if (color === "Blue") {
+      console.log(`${color} You love calm and peace`)
+   } else if (color === "Red") {
+      console.log(`${color} You are passionate and bold`)
+   } else if (color === "Green") {
+      console.log(`${color} You are connected to nature`)
+   } else if (color === "Yellow") {
+      console.log(`${color} You radiate happiness and energy`)
+   } else {
+      console.log(`${color} That's a unique choice`)
+   }
+}
+findColorMeaning(Userinput)
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+//const findColorMeaning = (color) => {
+   //if (color === "Blue"){
+  //}
+   //}
 
 
 
@@ -68,10 +94,17 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase(clientName, caseNumber) {
+   console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`)
+}
+logCase("John Doe", 12345)
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+//const logCase = (clientName, caseNumber) => {
+//  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`)
+//};
 
 
 /*
@@ -94,15 +127,31 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function markAttendance(studentName, isPresent) {
+   if (isPresent) {
+      console.log(`${studentName} marked as present.`);
+   } else {
+      console.log(`${studentName} marked as absent`)
+   }
+   }
+
+markAttendance("Amina", true);
+markAttendance("Ali", false);
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+const markAttendance = function(studentname,isPresent) {
+      if (isPresent) {
+      console.log(`${studentName} marked as present.`);
+   }
+//}
 
 
 
 /*
-STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
+ST
+RETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
 
 You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
 
