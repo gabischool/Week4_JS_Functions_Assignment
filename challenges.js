@@ -17,12 +17,19 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+const userimput = prompt("how many days are overdue?")
 
+function calculatelatefee(overduedays){
+      const latefee = overduedays * 0.25
+
+console.log(`the late fee is $${latefee}`)
+}
+ calculatelatefee (userimput)
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+//const calculatelatefee = function (overduedays)
 
 
 /*
@@ -44,6 +51,25 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+ const color = prompt("put your favorite color")
+
+ function findcolorMeaning (color){
+   
+      if (color == "Blue"){
+         console.log('${color} you love calm and peace')
+      } else if (color === "Red"){
+         console.log ('${color} you are passionate and bold')
+      } else if (color == "Green") {
+         console.log ('${color} you are connected to nature')
+      } else if (color === "yellow") {
+         console.log ('${color} you radiate happiness and energy')
+      } else {
+         console.log ('${color} that is a unique choice ')
+   }
+   }
+
+
+
 
 
 
@@ -68,10 +94,18 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logcase (name,casenumb){
 
+   console.log ('${name}, casenumb')
+}
+
+logcase ("name", casenumb)
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+const logcase = ("name", casenumb) =>{
+
+}
 
 
 /*
@@ -93,6 +127,15 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+
+
+function markAttendance(name, true){
+   if ('name,  is present'){
+      console.log ('${name}, True')
+   } else  { console.log ("name,  is absent") }
+
+}
+     markAttendance()
 
 
 
