@@ -17,12 +17,25 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+let n=prompt("donner");
+function calculateLateFee(){
+   let r=n*0.25;
+   let e=r.toFixed(2);
+   console.log(`The late fee is $${e}`);
+}
+calculateLateFee();
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+let calculateLateFee1 = function(){
+   let s=m*0.25;
+   let a=s.toFixed(2);
+   console.log(`The late fee is $${a}`);
+} 
+let m=prompt("Donner m");
+calculateLateFee1();
 
 
 /*
@@ -44,12 +57,47 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+function findColorMeaning(){
+   if (color=="Red"){
+      console.log("Red: You are passionate and bold.");
+   }
+   else if(color=="Blue"){
+      console.log("Blue: You love calm and peace.");
+   }
+   else if(color=="Green"){
+      console.log("Green: You are connected to nature.");
+   }
+   else if(color=="Yellow"){
+      console.log("Yellow: You radiate happiness and energy.");
+   }
+   else{
+      console.log("That's a unique choice!");
+   }
+}
+let color=prompt("What is your color");
+findColorMeaning();
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
+let findColorMeaning1 = () =>{
+   if (color1=="Red"){
+      console.log("Red: You are passionate and bold.");
+   }
+   else if(color1=="Blue"){
+      console.log("Blue: You love calm and peace.");
+   }
+   else if(color1=="Green"){
+      console.log("Green: You are connected to nature.");
+   }
+   else if(color1=="Yellow"){
+      console.log("Yellow: You radiate happiness and energy.");
+   }
+   else{
+      console.log("That's a unique choice!");
+   }
+}
+let color1=prompt("What is your color?");
+ findColorMeaning1();
 
 
 /*
@@ -60,20 +108,23 @@ Write a function called `logCase` that takes the client's name and
 the case number as parameters. For each case, log:
 
 "Case #[caseNumber]: [clientName]'s case is now logged."
-
+ 
 Example:
 Input: logCase("John Doe", 12345)
 Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function logCase(name, caseNumber){
+   console.log(`Case #${caseNumber}: ${name}'s case is now logged`);
+}
+logCase("Asma", 343);
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
-
+const Logcase = (NAME, CASENUMBER) => {console.log(`Case #${CASENUMBER}: ${NAME}'s case is now logged`);}
+   Logcase("Hafsa", 4526)
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
@@ -93,18 +144,35 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+function markAttendance(studentName, isPresent){
+   if(isPresent){
+      console.log(`${[studentName]} is present`);
+   }
+   else{
+      console.log(`${[studentName]} is absent`)
+   }
+}
+markAttendance("Asma", false);
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+const markAttendance1 = function(stn, isPresent){
+   if(isPresent){
+      console.log(`${[stn]} is present`);
+   }
+   else{
+      console.log(`${[stn]} is absent`)
+   }
+}
+markAttendance1("Hafsa", true);
 
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
 
-You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
+You are a teacher, and you want to automate the creation of detailed grade reports for your class. 
+Write a program that includes the following steps:
 
 1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
 
