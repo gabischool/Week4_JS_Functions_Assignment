@@ -23,7 +23,11 @@ Output: "The late fee is $2.50."
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+function calculateLateFee(overdueDays) {
+  const feePerDay = 0.25;
+  const totalFee = overdueDays * feePerDay;
+  console.log(`The late fee is $${totalFee.toFixed(2)}.`);
+}
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -50,6 +54,26 @@ Output: "Red: You are passionate and bold."
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+function findColorMeaning(color) {
+  switch (color.toLowerCase()) {
+    case "blue":
+      console.log("Blue: You love calm and peace.");
+      break;
+    case "red":
+      console.log("Red: You are passionate and bold.");
+      break;
+    case "green":
+      console.log("Green: You are connected to nature.");
+      break;
+    case "yellow":
+      console.log("Yellow: You radiate happiness and energy.");
+      break;
+    default:
+      console.log("That's a unique choice!");
+  }
+}
+
+
 
 
 /*
@@ -72,6 +96,11 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+
+function logCase(clientName, caseNumber) {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+
 
 
 /*
@@ -99,7 +128,13 @@ Output: "Amina is present."
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+function markAttendance(studentName, isPresent) {
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+}
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
@@ -135,3 +170,44 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+const readlineSync = require('readline-sync');
+
+function calculateAverage(score1, score2, score3) {
+  return (score1 + score2 + score3) / 3;
+}
+
+const determineGrade = (averageScore) => {
+  if (averageScore >= 90) {
+    return "A";
+  } else if (averageScore >= 80) {
+    return "B";
+  } else if (averageScore >= 70) {
+    return "C";
+  } else {
+    return "F";
+  }
+};
+
+function generateReport(studentName, score1, score2, score3) {
+  const average = calculateAverage(score1, score2, score3);
+  const letterGrade = determineGrade(average);
+  return `${studentName} - Average Score: ${average.toFixed(2)}, Grade: ${letterGrade}`;
+}
+
+let continueGenerating = true;
+
+while (continueGenerating) {
+  const name = readlineSync.question('Enter student name: ');
+  const score1 = parseFloat(readlineSync.question('Enter score 1: '));
+  const score2 = parseFloat(readlineSync.question('Enter score 2: '));
+  const score3 = parseFloat(readlineSync.question('Enter score 3: '));
+
+  const report = generateReport(name, score1, score2, score3);
+  console.log(report);
+
+  const another = readlineSync.question('Generate report for another student? (yes/no): ').toLowerCase();
+  if (another !== 'yes') {
+    continueGenerating = false;
+  }
+}
