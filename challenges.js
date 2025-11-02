@@ -18,7 +18,7 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+console.log("TEST 4")
 
 // Extra Task:
 // - Convert the function into a function expression.
