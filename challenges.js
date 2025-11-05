@@ -18,7 +18,7 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+console.log("TEST HERE")
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -50,7 +50,9 @@ Output: "Red: You are passionate and bold."
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+const qalad = "qalad";
 
+qalad
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
