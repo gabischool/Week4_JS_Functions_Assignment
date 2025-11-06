@@ -17,13 +17,27 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+const calculateLateFee = ()=>{
+   const  overdues = prompt("put number of overdues you have")
+const latefee= 0.25;
+const total = latefee*overdues
+console.log(`The late fee is ${total}`)
+}
+calculateLateFee(10)
+
+
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
-
+const calculateLateFee1 = function(){
+     const  overdues = prompt("put number of overdues you have")
+const latefee= 0.25;
+const total = latefee*overdues
+console.log(`The late fee is ${total}`)
+}
+calculateLateFee1()
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -44,7 +58,19 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+const findColorMeaning = ()=>{
+   const favcolor = prompt("pick your favorite color")
+   if (favcolor === "blue"){
+      console.log("You love calm and peace.")
+   }else if(favcolor==="red"){
+     console.log("you are passionate and bold.") 
+   }else if(favcolor==="green"){
+     console.log("You are connected to nature.") 
+   }else if(favcolor==="yellow"){
+     console.log("You radiate happiness and energy.") 
+   } else console.log("That's a unique choice")
+}
+findColorMeaning("red")
 
 
 // Extra Task:
@@ -68,6 +94,10 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const logCase = (clientName,caseNumber)=>{
+console.log(`Case #${caseNumber}: ${clientName}'s case is now logged. `)
+}
+logCase("John Doe", 12345);
 
 
 // Extra Task:
@@ -93,6 +123,13 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+
+const markAttendance =(studendentName,isPresent)=>{
+   if(isPresent){
+      console.log(`${studendentName} is Present`)
+   }else console.log(`${studendentName} is Absent`)
+}
+markAttendance("amina",false)
 
 
 
