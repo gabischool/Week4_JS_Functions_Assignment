@@ -18,6 +18,20 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee() {
+  // Ask the user to calculate late fee for overdue books
+  const input = prompt("How many overdue days?");
+  if (input === null) return; // user cancelled
+  const overdueDays = Number(input);
+  if (Number.isNaN(overdueDays) || overdueDays < 0) {
+    console.log("Invalid number of days.");
+    return;
+  }
+  const feePerDay = 0.25;
+  const total = feePerDay * overdueDays;
+  console.log(`The late fee is $${total.toFixed(2)}.`);
+}
+// calculateLateFee();
 
 
 // Extra Task:
@@ -46,6 +60,45 @@ Output: "Red: You are passionate and bold."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
+function findColorMeaning() {
+   const input = prompt("What's your favorite color?");
+   if (input === null) return; // user cancelled
+   const color = input.trim().toLowerCase();
+
+   switch (color) {
+      case "blue":
+         console.log("Blue: You love calm and peace.");
+         break;
+      case "red":
+         console.log("Red: You are passionate and bold.");
+         break;
+      case "green":
+         console.log("Green: You are connected to nature.");
+         break;
+      case "yellow":
+         console.log("Yellow: You radiate happiness and energy.");
+         break;
+      default:
+         console.log("That's a unique choice!");
+   }
+}
+findColorMeaning()
+
+
+
+// Arrow function version (Extra Task)
+const findColorMeaningArrow = () => {
+   const input = prompt("What's your favorite color?");
+   if (input === null) return;
+   const color = input.trim().toLowerCase();
+
+   if (color === "blue") console.log("Blue: You love calm and peace.");
+   else if (color === "red") console.log("Red: You are passionate and bold.");
+   else if (color === "green") console.log("Green: You are connected to nature.");
+   else if (color === "yellow") console.log("Yellow: You radiate happiness and energy.");
+   else console.log("That's a unique choice!");
+};
+
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
@@ -67,6 +120,18 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+
+function logCase(clientName, caseNumber) {
+   console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+
+// Arrow function version (extra task)
+const logCaseArrow = (clientName, caseNumber) =>
+   console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+
+// Example usage:
+// logCase("John Doe", 12345);
+// logCaseArrow("Jane Smith", 67890);
 
 
 
@@ -93,7 +158,22 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance(studentName, isPresent) {
+   if (isPresent) {
+      console.log(`${studentName} is present.`);
+   } else {
+      console.log(`${studentName} is absent.`);
+   }
+}
 
+// Function expression version (extra task)
+const markAttendanceExpr = function (studentName, isPresent) {
+   if (isPresent) {
+      console.log(`${studentName} is present.`);
+   } else {
+      console.log(`${studentName} is absent.`);
+   }
+};
 
 
 // Extra Task:
