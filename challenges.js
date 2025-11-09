@@ -18,7 +18,19 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee() 
+{
+   const  overdueDays = prompt ("Enter the number of overdue days:")
+   const feePerDay = 0.25;
+   const totalFee = overdueDays * feePerDay;
+   console.log(`The late fee is $${totalFee}.`)
+}
 
+calculateLateFee();
+
+
+
+ 
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -46,6 +58,35 @@ Output: "Red: You are passionate and bold."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
+function findColorMeaning() {
+ const color = prompt("Enter your favorite color:");
+
+if (color  === "blue") {
+  console.log("Blue: You love calm and peace.");
+} else if (color  === "Red") {
+  console.log("Red: You are passionate and bold.");
+} else if (color === "green") {
+  console.log("Green: You are connected to nature.");
+} else if (color === "yellow") {
+  console.log("Yellow: You radiate happiness and energy.");
+} else {
+  console.log("That's a unique choice!");
+}
+
+}
+
+findColorMeaning()
+
+
+
+
+
+
+
+
+
+
+
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
@@ -67,10 +108,15 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function logCase(clientName , caseNumber)
+ {
+  console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+};
+
+logCase("Macaad"  , 12345)
 
 
 
-// Extra Task:
 // - Rewrite the function as an arrow function.
 
 
@@ -95,6 +141,18 @@ Output: "Amina is present."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
+function markAttendance(studentName , isPresent)
+ {
+
+  if (isPresent) {
+    console.log(`${studentName} is present.`);
+  } else {
+    console.log(`${studentName} is absent.`);
+  }
+};
+
+
+markAttendance( "Ahmed" , true)
 
 // Extra Task:
 // - Convert the function into a function expression.
