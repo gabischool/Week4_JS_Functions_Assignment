@@ -18,6 +18,13 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee() {   
+  const numberDays=prompt("how many days u made late?")
+   const priceDays=0.25
+   const total=numberDays*priceDays
+   console.log(`the total price is ${total}`)}
+
+calculateLateFee()
 
 
 // Extra Task:
@@ -44,6 +51,19 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function findColorMeaning(){
+    const color=prompt("which color do you like?")
+    
+  if(color=="green"){console.log('You are connected to nature.')}
+ else if(color=="blue"){console.log('You are passionate and bold.')}
+else if(color=="yallow"){console.log('You radiate happiness and energy.')}
+else if(color=="red"){console.log('You are passionate and bold.')}
+  
+ else {console.log('That is a unique choice!')
+  }
+}
+
+findColorMeaning()
 
 
 
@@ -67,6 +87,11 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function logCase(caseNumber,clientName){
+   console.log(`his name is ${caseNumber},and his number is ${clientName}`)
+}
+logCase("salah",1234)
+
 
 
 
@@ -93,6 +118,12 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+//
+
+
+
+
+
 
 
 
