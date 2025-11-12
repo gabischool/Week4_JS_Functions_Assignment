@@ -18,7 +18,8 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+const tijaabo = "Wanaag"
+console.log(tijaabo)
 
 // Extra Task:
 // - Convert the function into a function expression.
