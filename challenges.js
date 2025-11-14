@@ -18,8 +18,21 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-const tijaabo = "Wanaag"
-console.log(tijaabo)
+// Function to calculate late fee
+function calculateLateFee() {
+
+  const overdueDays = prompt("Enter the number of overdue days:");
+
+  const amount = 0.25
+
+  const total = overdueDays * amount
+
+  console.log(`The late fee is $${total}.`);
+}
+
+// Functionka- Is Comment - just make active to check - Delete {//}
+//calculateLateFee();
+// Closed - THE END.
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -50,8 +63,31 @@ Output: "Red: You are passionate and bold."
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+function findColorMeaning(color) {
+
+  if (color === "Blue"){
+    console.log ("Blue: You love Calm and peace");
+
+  } else if (color === "Red") {
+  console.log ("Red: You are passionate and bold."); 
+    
+  } else if (color === "Green") {
+    console.log ("Green: You are connected to nature.");
+  
+  } else if (color === "Yellow"){
+    console.log ("Yellow: You radiate happiness and energy.");
+  
+  
+  } else {
+    console.log ("That's a unique choice!");
+  }
 
 
+}
+// const userColor = prompt("What is Your Fevorite Color ?");
+//Important Read Me ----> To active the  prompt function just delete comment  {//}
+//findColorMeaning(userColor);
+//End Here ----- 
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -68,9 +104,10 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
-
+function logCase (clientName, caseNumber) {
+  console.log (`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+logCase("ABDIKARIIN", 123456);
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
@@ -94,8 +131,16 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance (studentName, isPresent){
+  if (isPresent === true){
+    console.log(`${studentName} is present.`);
+  }else {
+    console.log(`${studentName} is absent.`);
+  }
+}
 
-
+markAttendance("Amina", true);
+markAttendance("ABDIKARIIN", false);
 
 // Extra Task:
 // - Convert the function into a function expression.
