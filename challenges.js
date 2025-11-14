@@ -117,12 +117,14 @@ Input: markAttendance("Amina", true)
 Output: "Amina is present."
 */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-//
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️
 
-
-
-
+function markAttendance(studentName,isPresent)
+{ if (studentName){console.log(`${studentName} is present.`)
+}
+else {console.log(`${studentName}is absent`);}
+};
+markAttendance()
 
 
 
