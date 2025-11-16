@@ -18,10 +18,29 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee() {
+   const useroverduedays = prompt ("the number of overduedays")
+   const overduedays = 0.25
+   const total = overduedays * useroverduedays
 
+   console.log (`The late fee is $${total}`)
+
+}
+
+calculateLateFee()
 
 // Extra Task:
 // - Convert the function into a function expression.
+const calculateLateFeetol = function (){
+     const useroverduedays = prompt ("the number of overduedays")
+   const overduedays = 0.25
+   const total = overduedays * useroverduedays
+
+   console.log (`The late fee is $${total}`)
+
+
+}
+calculateLateFee()
 
 
 
@@ -45,7 +64,7 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+console.log ("hani")
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
@@ -68,12 +87,19 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase (clientName,caseNumber) {
+   console.log ('case # {clientName}${caseNumber} case is now logged in ')
 
+}
+logCase()
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
+const arrow = () => {
 
+}
+logCase()
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
@@ -94,11 +120,21 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance (studentName, isPresent) {
 
+   if (isPresent) {
+      console.log (studentName ,"is present" ) 
+     } else {
+         console.log (studentName ," is absent ") 
+      }
+   }
+
+markAttendance ("ahmed" , true)
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+// const markAttendance = faction()
 
 
 /*
