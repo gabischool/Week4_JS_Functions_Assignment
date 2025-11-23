@@ -18,6 +18,13 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee () {
+   const overduedays =prompt("how many days is the books overdue")
+const lateFee = 0.25 
+const totall = overduedays *lateFee 
+console.log(`the late fee is ${totall}`) 
+}
+calculateLateFee()
 
 
 // Extra Task:
@@ -45,7 +52,24 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function findColorMeaning(color){
+   const prompt=("player what is your favorite color") 
+   if (color === "Blue" ){
+      console.log("${color} You love calm and peace")
+   } else if (color === "Red"){
+      console.log("${color} You are passionate and bold");
+   } else if (color === "green"){
+      console.log("${color} You are connected to nature");
+   } else if (color === "yellow"){
+      console.log("yellow, You radiate happiness and energy")
+    } else {
+      console.log("that' s a unique choice")
+   }
+}
+const findColorMeaning2=(color) => {
+   console.log(`player what is your favorite color`)
+}
+findColorMeaning()
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
@@ -67,6 +91,17 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+
+function logCase(clientName, caseNumber) {
+console.log(` Case ${caseNumber}: ${clientName} case is now logged`);
+}
+
+const logCase2 = (clientName, caseNumber) => {
+
+   console.log(` Case ${caseNumber}: ${clientName} case is now logged`);
+}
+
+ logCase("John Doe", 12345)
 
 
 
@@ -95,9 +130,27 @@ Output: "Amina is present."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
+function markAttendance(studentName,isPresent){
+ if (studentName, isPresent){
+      console.log(`${studentName} ispresent`)
+} else {
+   console.log('${studentName} is absent')}
+ }
+
+markAttendance()
+
 
 // Extra Task:
 // - Convert the function into a function expression.
+
+const markAttendace2= function(studentName, isPresent){
+   if (studentName,isPresent){
+      console.log(`${studentName} is present`)
+} else {
+   console.log(`${studentName} is absent`);}
+}
+
+
 
 
 
