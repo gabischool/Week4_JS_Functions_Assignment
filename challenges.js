@@ -18,8 +18,11 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function something() {
+   console.log("test")
+}
 
-
+something()
 // Extra Task:
 // - Convert the function into a function expression.
 
