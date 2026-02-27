@@ -17,68 +17,133 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+const calculateLateFee = () => {
+   const overdueDays = prompt("Enter the number of overdue days:");
 
-
-
-// Extra Task:
-// - Convert the function into a function expression.
-
-
-
-/*
-Task 2 : Favorite Color Finder 🚀🚀🚀🚀
-
-You are designing a game that asks players for their favorite color. 
-Write a function called `findColorMeaning` that takes a color as input 
-(prompt the user) and logs the following meanings:
-
-- "Blue: You love calm and peace."
-- "Red: You are passionate and bold."
-- "Green: You are connected to nature."
-- "Yellow: You radiate happiness and energy."
-- For any other color: "That's a unique choice!"
-
-Example:
-User Input: "Red"
-Output: "Red: You are passionate and bold."
-*/
-
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+   const feeAmount = 0.25;
+   const totalFee = Number(overdueDays)
+      * feeAmount;
+   console.log(`The late fee is $${totalFee.toFixed(2)}.`)
+}
+calculateLateFee();
 
 
 // Extra Task:
-// - Rewrite the function using an arrow function.
+// - Convert the function into a function expression .
 
+const calculateLateFeeExpression = function (overdueDays) { }
+const overDays = prompt("Enter the number of overdue days:");
 
-
+const fee = 0.25;
+const total = Number(overDays)
+   * fee;
+console.log(`The late fee is $${total.toFixed(2)}.`)
+calculateLateFeeExpression(overDays);
 /*
-Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
+// Task 2 : Favorite Color Finder 🚀🚀🚀🚀
 
-You’re a lawyer, and you’ve been assigned to organize your case files. 
-Write a function called `logCase` that takes the client's name and 
-the case number as parameters. For each case, log:
+// You are designing a game that asks players for their favorite color.
+// Write a function called `findColorMeaning` that takes a color as input
+// (prompt the user) and logs the following meanings:
 
-"Case #[caseNumber]: [clientName]'s case is now logged."
+// - "Blue: You love calm and peace."
+// - "Red: You are passionate and bold."
+// - "Green: You are connected to nature."
+// - "Yellow: You radiate happiness and energy."
+// - For any other color: "That's a unique choice!"
 
-Example:
-Input: logCase("John Doe", 12345)
-Output: "Case #12345: John Doe's case is now logged."
-*/
+// Example:
+// User Input: "Red"
+// Output: "Red: You are passionate and bold."
+// */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+const findColorMeaning = function () {
+   const color = prompt("What is your favorite color?"). toLowerCase();
 
+   const blue = "Blue: You love calm and peace";
+   const red = "Red: You are passionate and bold";
+   const green = "Green: You are connected to nature";
+   const yellow = "Yellow: You radiate happiness and energy";
+   if (color === "blue") {
+      console.log("You love calm and peace");
+   }
+
+
+   else if (color === "red") {
+      console.log(" You are passionate and bold");
+   }
+   else if (color === "green") {
+      console.log(": You are connected to nature");
+   }
+   else if (color === "yellow") {
+      console.log(" You radiate happiness and energy");
+   }
+   else {
+      console.log("That's a unique choice!");
+   }
+}
+findColorMeaning();
+
+// Extra Task:
+// - Rewrite the function using an arrow function. 
+
+const colorfinder = () => {
+ const color = prompt("What is your favorite color?"). toLowerCase();
+   const blue = "Blue: You love calm and peace";
+   const red = "Red: You are passionate and bold";
+   const green = "Green: You are connected to nature";
+   const yellow = "Yellow: You radiate happiness and energy";
+   if (color === "blue") {
+      console.log("You love calm and peace");
+   }
+   else if (color === "red") {
+      console.log("you are passionate and bold");
+   }
+   else if (color === "green") {
+      console.log("you are connected to nature");
+   }
+   else if (color === "yellow") {
+      console.log("you radiate happiness and energy")
+   }
+   else {
+      console.log("that's a unique choice!")
+   }
+}
+colorfinder();
+
+// Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
+
+// You’re a lawyer, and you’ve been assigned to organize your case files.
+// Write a function called `logCase` that takes the client's name and
+// the case number as parameters. For each case, log:
+
+// "Case #[caseNumber]: [clientName]'s case is now logged."
+
+// Example:
+// Input: logCase("John Doe", 12345)
+// Output: "Case #12345: John Doe's case is now logged."
+// */
+
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+const logcase = function(clientname, casenumber) {
+   console.log(`case #${casenumber}: ${clientname}'s case is now logged.`);
+}
+logcase("John Doe", 12345);
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
+const logcaseArrow = (clientname, casenumber) => {
+   console.log(`case #${casenumber}: ${clientname}'s case is now logged.`);
+}
+logcaseArrow("John Doe", 12345);
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
-You’re a teacher tracking student attendance. Write a function called 
-`markAttendance` that takes a student’s name and a boolean `isPresent` 
+You’re a teacher tracking student attendance. Write a function called
+`markAttendance` that takes a student’s name and a boolean `isPresent`
 value. If the student is present, log:
 
 "[studentName] is present."
@@ -94,11 +159,28 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const markAttendance = (studentName, ispresent) => {
+   if (ispresent === true) {
+      console.log(`${studentName} is present.`);
+   } else if (ispresent === false) {
+      console.log(`${studentName} is absent.`);
+   }
+}
+markAttendance("Amina", true);
+
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+const markAttendanceExpression = function (studentName, ispresent) {
+   if (ispresent === true) {
+      console.log(`${studentName} is present.`);
+   } else if (ispresent === false) {
+      console.log(`${studentName} is absent.`);
+   }
+}
+markAttendanceExpression("Amina", true);
 
 
 /*
