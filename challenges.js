@@ -17,7 +17,9 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
+function greetUser(name) {
+  return "Hello, " + name + "!";
+}
 
 
 
@@ -33,7 +35,9 @@
 
 // ✍️ Solve it here ✍️
 
-
+function calculateTip(bill, tipPercent) {
+  return bill * (tipPercent / 100);
+}
 
 
 /* ------------------------------------------------------------
@@ -48,8 +52,9 @@
 
 // ✍️ Solve it here ✍️
 
-
-
+function celsiusToFahrenheit(c) {
+  return (c * 9) / 5 + 32;
+}
 
 /* ------------------------------------------------------------
    Task 4: isAdult(age) 🎂
@@ -63,7 +68,9 @@
 
 // ✍️ Solve it here ✍️
 
-
+const isAdult = (age) => {
+  return age >= 18;
+};
 
 
 /* ------------------------------------------------------------
@@ -75,7 +82,9 @@
 
 // ✍️ Stretch: solve it here ✍️
 
-
+function getInitials(firstName, lastName) {
+  return firstName[0] + "." + lastName[0] + ".";
+}
 
 
 /* ============================================================
