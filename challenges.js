@@ -16,8 +16,7 @@
    greetUser("Asha")   → "Hello, Asha!"
    ------------------------------------------------------------ */
 
-// ✍️ Solve it here ✍️
-
+function 
 
 
 
