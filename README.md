@@ -29,7 +29,7 @@ greetUser("Asha");    // → "Hello, Asha!"
 
 ---
 
-### Task 2 — Tip Calculator 💵
+// Task 2 — Tip Calculator 💵
 
 Write a function `calculateTip(bill, tipPercent)` that returns the tip amount.
 

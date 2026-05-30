@@ -16,10 +16,9 @@
    greetUser("Asha")   → "Hello, Asha!"
    ------------------------------------------------------------ */
 
-// ✍️ Solve it here ✍️
-
-
-
+function greetUser(name) {
+  return `Hello, ${name}!`;
+}
 
 /* ------------------------------------------------------------
    Task 2: calculateTip(bill, tipPercent) 💵
@@ -31,8 +30,9 @@
    calculateTip(80, 15) → 12
    ------------------------------------------------------------ */
 
-// ✍️ Solve it here ✍️
-
+function calculateTip(bill, tipPercent) {
+  return bill * (tipPercent / 100);
+}
 
 
 
@@ -46,8 +46,9 @@
    celsiusToFahrenheit(100) → 212
    ------------------------------------------------------------ */
 
-// ✍️ Solve it here ✍️
-
+function celsiusToFahrenheit(c) {
+  return (c * 9) / 5 + 32;
+}
 
 
 
@@ -61,7 +62,7 @@
    isAdult(15) → false
    ------------------------------------------------------------ */
 
-// ✍️ Solve it here ✍️
+const isAdult = (age) => age >= 18;
 
 
 
