@@ -18,6 +18,19 @@
 
 // ✍️ Solve it here ✍️
 
+const greetUser = (name) => {
+
+   return `Hello ${name}!`
+
+}
+
+
+ 
+console.log("=== Task 1: greetUser ===");
+console.log(greetUser("Asha"));     // → "Hello, Asha!"
+console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!" 
+
+
 
 
 
@@ -32,6 +45,12 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
+
+const calculateTip = (bill, tipPercent) => {
+   const tipAmount = (bill* (tipPercent / 100))
+   return`Your Tip is ${tipAmount}`
+
+}
 
 
 
@@ -48,7 +67,10 @@
 
 // ✍️ Solve it here ✍️
 
-
+function celsiusToFahrenheit(c) {
+   const tempInF = ((c * 9) / 5 + 32)
+   return `Temperature is ${tempInF} F`
+}
 
 
 /* ------------------------------------------------------------
@@ -63,7 +85,13 @@
 
 // ✍️ Solve it here ✍️
 
-
+const isAdult = (age)  => {
+   if (age >= 18) {
+      return true
+   } else {
+      return false
+   }
+}
 
 
 /* ------------------------------------------------------------
@@ -75,6 +103,9 @@
 
 // ✍️ Stretch: solve it here ✍️
 
+function getInitial(firstName, lastName) {
+   return `${firstName[0]}.${lastName[0]}.`
+}
 
 
 
@@ -83,9 +114,7 @@
    This calls your functions and prints the results.
    ============================================================ */
 
-console.log("=== Task 1: greetUser ===");
-console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!"
-console.log(greetUser("Asha"));     // → "Hello, Asha!"
+
 
 console.log("\n=== Task 2: calculateTip ===");
 console.log(calculateTip(50, 20));  // → 10
@@ -100,3 +129,6 @@ console.log("\n=== Task 4: isAdult ===");
 console.log(isAdult(20));  // → true
 console.log(isAdult(15));  // → false
 console.log(isAdult(18));  // → true
+
+
+console.log(getInitial("Fatma", "ali"))
