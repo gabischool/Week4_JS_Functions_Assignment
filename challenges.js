@@ -20,10 +20,10 @@
 
 
 
-function sayHi(){
-   console.log("Hi")
-}
-sayHi()
+// function sayHi(){
+//    console.log("Hi")
+// }
+// sayHi()
 
 /* ------------------------------------------------------------
    Task 2: calculateTip(bill, tipPercent) 💵
@@ -104,3 +104,6 @@ sayHi()
 // console.log(isAdult(20));  // → true
 // console.log(isAdult(15));  // → false
 // console.log(isAdult(18));  // → true
+
+
+// https://github.com/gabischool/Week4_JS_Functions_Assignment/pull/137
