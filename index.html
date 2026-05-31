@@ -2,30 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Week 4 — Functions Assignment</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      padding: 40px;
-      text-align: center;
-      color: #1f2937;
-      background: #f4f6fb;
-    }
-    h1 { color: #6366f1; }
-    p { color: #6b7280; font-size: 18px; }
-    code {
-      background: #e0e7ff;
-      padding: 2px 8px;
-      border-radius: 4px;
-      color: #4338ca;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Week 4 — Functions Assignment</h1>
-  <p>👇 Open the browser <strong>Console</strong> (press <code>F12</code>) to see your code's output.</p>
-  <p>Edit <code>challenges.js</code> and refresh the page.</p>
 
-  <script src="challenges.js"></script>
+  <div class="calculator">
+
+    <div class="display-box">
+      <div id="previous-calculation" class="previous-calculation"></div>
+      <input type="text" id="display" disabled>
+    </div>
+
+    <button class="operator" onclick="clearDisplay()">C</button>
+    <button class="operator" onclick="appendValue('/')">÷</button>
+    <button class="operator" onclick="appendValue('*')">×</button>
+    <button class="operator" onclick="deleteLast()">⌫</button>
+
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button class="operator" onclick="appendValue('-')">−</button>
+
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button class="operator" onclick="appendValue('+')">+</button>
+
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button class="equal" onclick="calculate()">=</button>
+
+    <button class="zero" onclick="appendValue('0')">0</button>
+    <button onclick="appendValue('.')">.</button>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
