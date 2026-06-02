@@ -18,8 +18,11 @@
 
 // ✍️ Solve it here ✍️
 
-
-
+const greetUser = (name) => {
+  return `Hello, ${name}!`;
+}
+console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!"
+console.log(greetUser("Asha"));     // → "Hello, Asha!"
 
 /* ------------------------------------------------------------
    Task 2: calculateTip(bill, tipPercent) 💵
@@ -34,8 +37,11 @@
 // ✍️ Solve it here ✍️
 
 
-
-
+const calculateTip = (bill, tipPercent) => {
+  return bill * (tipPercent / 100);
+}
+console.log(calculateTip(50, 20));  // → 10
+console.log(calculateTip(80, 15));  // → 12
 /* ------------------------------------------------------------
    Task 3: celsiusToFahrenheit(c) 🌡️
 
@@ -48,8 +54,11 @@
 
 // ✍️ Solve it here ✍️
 
-
-
+const celsiusToFahrenheit = (c) => {
+  return (c * 9) / 5 + 32;
+}
+console.log(celsiusToFahrenheit(0));    // → 32
+console.log(celsiusToFahrenheit(100));
 
 /* ------------------------------------------------------------
    Task 4: isAdult(age) 🎂
@@ -63,7 +72,12 @@
 
 // ✍️ Solve it here ✍️
 
-
+const isAdult = (age) => {
+  return age >= 18;
+}
+console.log(isAdult(20));  // → true
+console.log(isAdult(15));  // → false
+console.log(isAdult(18));  // → true
 
 
 /* ------------------------------------------------------------
@@ -76,7 +90,10 @@
 // ✍️ Stretch: solve it here ✍️
 
 
-
+const getInitials = (firstName, lastName) => {
+  return `${firstName[0]}.${lastName[0]}.`;
+}
+console.log(getInitials("Fatuma", "Ali")); // → "F.A."
 
 /* ============================================================
    👇 TEST CODE — DO NOT EDIT 👇
