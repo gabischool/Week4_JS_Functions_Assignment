@@ -16,9 +16,21 @@
    greetUser("Asha")   → "Hello, Asha!"
    ------------------------------------------------------------ */
 
-// ✍️ Solve it here ✍️
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function calculateLateFee(overduedays) {
+   return overduedays * 0.25;
+}
+let overdueDays = number(prompt("Enter the number of overdue days:"));
+let lateFee = calculateLateFee(overdueDays);
+console.log(`The late fee is $${lateFee.toFixed(2)}.`);
 
+// Extra Task:
+// - Rewrite the function using an arrow function.
+const calculateLateFee = (overduedays) => {
 
+  const feePerDay = 0.25;
+  return days * feePerDay;
+}
 
 
 /* ------------------------------------------------------------
@@ -35,6 +47,27 @@
 
 
 
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+funtion findColorMeaning() {
+   switch (color.toLowerCase()) {
+      case "blue":
+         console.log("Blue: You love calm and peace.");
+         break;
+      case "red":
+         console.log("Red: You are passionate and bold.");
+         break;
+      case "green":
+         console.log("Green: You are connected to nature.");
+         break;
+      case "yellow":
+         console.log("Yellow: You radiate happiness and energy.");
+         break;
+      default:
+         console.log("That's a unique choice!");
+   }
+}
+let color = prompt("Enter your favorite color:");
+findColorMeaning();
 
 /* ------------------------------------------------------------
    Task 3: celsiusToFahrenheit(c) 🌡️
@@ -61,7 +94,10 @@
    isAdult(15) → false
    ------------------------------------------------------------ */
 
-// ✍️ Solve it here ✍️
+function logCase(clientName, caseNumber) {
+   console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+logCase("John Doe", 12345);
 
 
 
@@ -78,14 +114,13 @@
 
 
 
-/* ============================================================
-   👇 TEST CODE — DO NOT EDIT 👇
-   This calls your functions and prints the results.
-   ============================================================ */
-
-console.log("=== Task 1: greetUser ===");
-console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!"
-console.log(greetUser("Asha"));     // → "Hello, Asha!"
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance(studentName, isPresent) {
+   if (isPresent) {
+      console.log(`${studentName} is present.`);
+   } else {
+      console.log(`${studentName} is absent.`);
+   }
 
 console.log("\n=== Task 2: calculateTip ===");
 console.log(calculateTip(50, 20));  // → 10
