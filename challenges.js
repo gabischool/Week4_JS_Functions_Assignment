@@ -48,6 +48,9 @@
 
 // ✍️ Solve it here ✍️
 
+function (c) {
+  return (c * 9) / 5 + 32;
+}
 
 
 
