@@ -21,6 +21,10 @@ function greetUser(name) {
   return "Hello, " + name + "!";
 }
 
+console.log("=== Task 1: greetUser ===");
+console.log(greetUser("Asha"));     // → "Hello, Asha!"
+console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!"
+
 
 
 /* ------------------------------------------------------------
@@ -82,8 +86,8 @@ const isAdult = (age) => {
    ------------------------------------------------------------ */
 
 // ✍️ Stretch: solve it here ✍️
-function getInitials(firstName, lastName) {
-  return firstName[0] + "." + lastName[0] + ".";
+function getInitial(firstName, lastName) {
+  return `${firstName[0]}.${lastName[0]}.`
 }
 
 
@@ -110,3 +114,5 @@ console.log("\n=== Task 4: isAdult ===");
 console.log(isAdult(20));  // → true
 console.log(isAdult(15));  // → false
 console.log(isAdult(18));  // → true
+
+console.log(getInitial("Fatma", "ali"))
