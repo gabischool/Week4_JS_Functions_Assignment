@@ -80,8 +80,7 @@ isAdult(18);  // → true
 
 ```bash
 git add .
-git commit -m "Complete Week 4 functions assignment"
-git push
+
 ```
 
 Then submit the link to your repo (something like `https://github.com/your-name/Week4_Functions`).
