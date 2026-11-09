@@ -7,7 +7,7 @@
    ============================================================ */
 
 
-/* ------------------------------------------------------------
+/* -----------------------------------------------------------
    Task 1: greetUser(name) 👋
 
    Return a greeting string like "Hello, Fatuma!"
@@ -17,8 +17,11 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
-
+function greetUser(name) {
+   return `Hello, ${name}!`
+}
+greetUser("Fatuma")
+greetUser("Asha") 
 
 
 /* ------------------------------------------------------------
@@ -32,7 +35,12 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
+function calculateTip(bill, tipPercent){
+   return bill * (tipPercent / 100)
+}
 
+   calculateTip(50, 20) 
+   calculateTip(80, 15)
 
 
 
@@ -47,7 +55,12 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
+function celsiusToFahrenheit(c){
+   return (c * 9) / 5 + 32
+}
+  celsiusToFahrenheit(0) 
+celsiusToFahrenheit(100)
+celsiusToFahrenheit(25)
 
 
 
@@ -62,8 +75,17 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
-
+const isAdult=(age)=>{
+   if (age >= 18) {
+      return true
+   }
+   else{
+      return false
+   }
+}
+isAdult(20) 
+   isAdult(15)
+ isAdult(18)
 
 
 /* ------------------------------------------------------------
@@ -74,7 +96,10 @@
    ------------------------------------------------------------ */
 
 // ✍️ Stretch: solve it here ✍️
-
+function getInitials(firstName, lastName){
+   return firstName[0]+"."+lastName[0]+".";
+}
+ getInitials("Fatuma", "Ali")
 
 
 
@@ -100,3 +125,6 @@ console.log("\n=== Task 4: isAdult ===");
 console.log(isAdult(20));  // → true
 console.log(isAdult(15));  // → false
 console.log(isAdult(18));  // → true
+
+console.log("\n=== optional: getInitials ===");
+console.log(getInitials("Fatuma", "Ali"))
