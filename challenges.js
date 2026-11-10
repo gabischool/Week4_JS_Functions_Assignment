@@ -41,7 +41,10 @@ function calculateTip(bill, tipPercent) {
     return bill * (tipPercent / 100)
 
 }
-calculateTip(50, 20);
+
+
+console.log(calculateTip(50, 20));
+console.log(calculateTip(80, 15));
 
 
 
