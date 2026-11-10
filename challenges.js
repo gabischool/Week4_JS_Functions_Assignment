@@ -37,6 +37,7 @@ console.log(greetUser("Asha"))
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
+
 function calculateTip(bill, tipPercent) {
     return bill * (tipPercent / 100)
 
@@ -75,7 +76,6 @@ console.log(celsiusToFahrenheit(25));
 
 
 
-
 /* ------------------------------------------------------------
    Task 4: isAdult(age) 🎂
 
@@ -87,7 +87,6 @@ console.log(celsiusToFahrenheit(25));
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
 
 const isAdult = age => age >= 18;
 
@@ -101,6 +100,8 @@ console.log(isAdult(18));
 
 
 
+
+
 /* ------------------------------------------------------------
    🚀 STRETCH (optional): getInitials(firstName, lastName)
 
@@ -109,12 +110,14 @@ console.log(isAdult(18));
    ------------------------------------------------------------ */
 
 // ✍️ Stretch: solve it here ✍️
+
 function getInitials(firstName, lastName) {
     if (!firstName || !lastName) return "";
     return `${firstName[0].toUpperCase()}.${lastName[0].toUpperCase()}.`;
 }
 
 console.log(getInitials("Fatuma", "Ali"));
+
 
 
 /* ============================================================
