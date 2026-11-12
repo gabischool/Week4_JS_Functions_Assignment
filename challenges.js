@@ -6,7 +6,6 @@
    prints results to the console — don't change that part.
    ============================================================ */
 
-
 /* ------------------------------------------------------------
    Task 1: greetUser(name) 👋
 
@@ -17,9 +16,14 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
-
-
+function greetuser(name) {
+  return "Hello, " + name + "!";
+}
+function greetuser(name) {
+  return "Hello, " + name + "!";
+}
+console.log(greetuser("fatuma"));
+console.log(greetuser("Aisha"));
 
 /* ------------------------------------------------------------
    Task 2: calculateTip(bill, tipPercent) 💵
@@ -33,8 +37,11 @@
 
 // ✍️ Solve it here ✍️
 
-
-
+function calculaterTip(bill, tipPercent) {
+  return bill * (tipPercent / 100);
+}
+console.log(calculaterTip(50, 20));
+console.log(calculaterTip(80, 15));
 
 /* ------------------------------------------------------------
    Task 3: celsiusToFahrenheit(c) 🌡️
@@ -47,9 +54,12 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
-
-
+function celsiusToFahrenheit(c) {
+  return (c * 9) / 5 + 32;
+}
+console.log(celsiusToFahrenheit(0));
+console.log(celsiusToFahrenheit(100));
+console.log(celsiusToFahrenheit(25));
 
 /* ------------------------------------------------------------
    Task 4: isAdult(age) 🎂
@@ -62,9 +72,16 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
-
-
+function isAdult(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isAdult(20));
+console.log(isAdult(15));
+console.log(iAdult(18));
 
 /* ------------------------------------------------------------
    🚀 STRETCH (optional): getInitials(firstName, lastName)
@@ -74,9 +91,10 @@
    ------------------------------------------------------------ */
 
 // ✍️ Stretch: solve it here ✍️
-
-
-
+function getInitials(firstName, lastName) {
+  return firstName[0] + "." + lastName[0] + ".";
+}
+console.log(getInitials("fatuma", "ali"));
 
 /* ============================================================
    👇 TEST CODE — DO NOT EDIT 👇
@@ -84,19 +102,19 @@
    ============================================================ */
 
 console.log("=== Task 1: greetUser ===");
-console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!"
-console.log(greetUser("Asha"));     // → "Hello, Asha!"
+console.log(greetUser("Fatuma")); // → "Hello, Fatuma!"
+console.log(greetUser("Asha")); // → "Hello, Asha!"
 
 console.log("\n=== Task 2: calculateTip ===");
-console.log(calculateTip(50, 20));  // → 10
-console.log(calculateTip(80, 15));  // → 12
+console.log(calculateTip(50, 20)); // → 10
+console.log(calculateTip(80, 15)); // → 12
 
 console.log("\n=== Task 3: celsiusToFahrenheit ===");
-console.log(celsiusToFahrenheit(0));    // → 32
-console.log(celsiusToFahrenheit(100));  // → 212
-console.log(celsiusToFahrenheit(25));   // → 77
+console.log(celsiusToFahrenheit(0)); // → 32
+console.log(celsiusToFahrenheit(100)); // → 212
+console.log(celsiusToFahrenheit(25)); // → 77
 
 console.log("\n=== Task 4: isAdult ===");
-console.log(isAdult(20));  // → true
-console.log(isAdult(15));  // → false
-console.log(isAdult(18));  // → true
+console.log(isAdult(20)); // → true
+console.log(isAdult(15)); // → false
+console.log(isAdult(18)); // → true
