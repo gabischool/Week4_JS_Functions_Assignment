@@ -6,7 +6,6 @@
    prints results to the console — don't change that part.
    ============================================================ */
 
-
 /* ------------------------------------------------------------
    Task 1: greetUser(name) 👋
 
@@ -18,8 +17,7 @@
 
 // ✍️ Solve it here ✍️
 
-
-
+const greetUser = (name) => `Hello, ${name} !`;
 
 /* ------------------------------------------------------------
    Task 2: calculateTip(bill, tipPercent) 💵
@@ -32,9 +30,9 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
-
-
+function calculateTip(bill, tipPercent) {
+  return `${(bill * tipPercent) / 100} `;
+}
 
 /* ------------------------------------------------------------
    Task 3: celsiusToFahrenheit(c) 🌡️
@@ -48,9 +46,9 @@
 
 // ✍️ Solve it here ✍️
 
-
-
-
+const celsiusToFahrenheit = (c) => {
+  return (c * 9) / 5 + 32;
+};
 /* ------------------------------------------------------------
    Task 4: isAdult(age) 🎂
 
@@ -62,9 +60,13 @@
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
-
-
-
+function isAdult(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /* ------------------------------------------------------------
    🚀 STRETCH (optional): getInitials(firstName, lastName)
@@ -75,28 +77,25 @@
 
 // ✍️ Stretch: solve it here ✍️
 
-
-
-
 /* ============================================================
    👇 TEST CODE — DO NOT EDIT 👇
    This calls your functions and prints the results.
    ============================================================ */
 
 console.log("=== Task 1: greetUser ===");
-console.log(greetUser("Fatuma"));   // → "Hello, Fatuma!"
-console.log(greetUser("Asha"));     // → "Hello, Asha!"
+console.log(greetUser("Fatuma")); // → "Hello, Fatuma!"
+console.log(greetUser("Asha")); // → "Hello, Asha!"
 
 console.log("\n=== Task 2: calculateTip ===");
-console.log(calculateTip(50, 20));  // → 10
-console.log(calculateTip(80, 15));  // → 12
+console.log(calculateTip(50, 20)); // → 10
+console.log(calculateTip(80, 15)); // → 12
 
 console.log("\n=== Task 3: celsiusToFahrenheit ===");
-console.log(celsiusToFahrenheit(0));    // → 32
-console.log(celsiusToFahrenheit(100));  // → 212
-console.log(celsiusToFahrenheit(25));   // → 77
+console.log(celsiusToFahrenheit(0)); // → 32
+console.log(celsiusToFahrenheit(100)); // → 212
+console.log(celsiusToFahrenheit(25)); // → 77
 
 console.log("\n=== Task 4: isAdult ===");
-console.log(isAdult(20));  // → true
-console.log(isAdult(15));  // → false
-console.log(isAdult(18));  // → true
+console.log(isAdult(20)); // → true
+console.log(isAdult(15)); // → false
+console.log(isAdult(18)); // → true
