@@ -18,7 +18,9 @@
 
 // ✍️ Solve it here ✍️
 
-
+function greetUser(name) {
+    return "Hello, " + name + "!";
+}
 
 
 /* ------------------------------------------------------------
@@ -33,6 +35,9 @@
 
 // ✍️ Solve it here ✍️
 
+function calculateTip(bill, tipPercent) {
+    return bill * (tipPercent / 100);
+}
 
 
 
@@ -48,7 +53,9 @@
 
 // ✍️ Solve it here ✍️
 
-
+function celsiusToFahrenheit(c) {
+    return (c * 9) / 5 + 32;
+}
 
 
 /* ------------------------------------------------------------
@@ -63,6 +70,7 @@
 
 // ✍️ Solve it here ✍️
 
+const isAdult = (age) => age >= 18;
 
 
 
@@ -75,6 +83,9 @@
 
 // ✍️ Stretch: solve it here ✍️
 
+function getInitials(firstName, lastName) {
+    return firstName.charAt(0) + "." + lastName.charAt(0) + ".";
+}
 
 
 
